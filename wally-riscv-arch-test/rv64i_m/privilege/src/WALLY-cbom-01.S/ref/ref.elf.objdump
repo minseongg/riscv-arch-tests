@@ -1,0 +1,1763 @@
+
+ref.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text.init:
+
+0000000080000000 <rvtest_entry_point>:
+    80000000:	feedc0b7          	lui	ra,0xfeedc
+    80000004:	ead08093          	addi	ra,ra,-339 # fffffffffeedbead <absimm+0xffffffff441ce3dd>
+    80000008:	00b09093          	slli	ra,ra,0xb
+    8000000c:	7f708093          	addi	ra,ra,2039
+    80000010:	00b09093          	slli	ra,ra,0xb
+    80000014:	36f08093          	addi	ra,ra,879
+    80000018:	00a09093          	slli	ra,ra,0xa
+    8000001c:	2ad08093          	addi	ra,ra,685
+    80000020:	ff76e137          	lui	sp,0xff76e
+    80000024:	f5610113          	addi	sp,sp,-170 # ffffffffff76df56 <absimm+0xffffffff44a60486>
+    80000028:	00b11113          	slli	sp,sp,0xb
+    8000002c:	7fb10113          	addi	sp,sp,2043
+    80000030:	00b11113          	slli	sp,sp,0xb
+    80000034:	5b710113          	addi	sp,sp,1463
+    80000038:	00a11113          	slli	sp,sp,0xa
+    8000003c:	35610113          	addi	sp,sp,854
+    80000040:	7fbb71b7          	lui	gp,0x7fbb7
+    80000044:	fab18193          	addi	gp,gp,-85 # 7fbb6fab <absimmsh+0x740e61fe>
+    80000048:	00b19193          	slli	gp,gp,0xb
+    8000004c:	3fd18193          	addi	gp,gp,1021
+    80000050:	00b19193          	slli	gp,gp,0xb
+    80000054:	6db18193          	addi	gp,gp,1755
+    80000058:	00a19193          	slli	gp,gp,0xa
+    8000005c:	3ab18193          	addi	gp,gp,939
+    80000060:	bfddb237          	lui	tp,0xbfddb
+    80000064:	7d520213          	addi	tp,tp,2005 # ffffffffbfddb7d5 <absimm+0xffffffff050cdd05>
+    80000068:	00b21213          	slli	tp,tp,0xb
+    8000006c:	5fe20213          	addi	tp,tp,1534 # 5fe <pos+0x5be>
+    80000070:	00b21213          	slli	tp,tp,0xb
+    80000074:	76d20213          	addi	tp,tp,1901 # 76d <pos+0x72d>
+    80000078:	00a21213          	slli	tp,tp,0xa
+    8000007c:	3d520213          	addi	tp,tp,981 # 3d5 <pos+0x395>
+    80000080:	dfeee2b7          	lui	t0,0xdfeee
+    80000084:	bea28293          	addi	t0,t0,-1046 # ffffffffdfeedbea <absimm+0xffffffff251e011a>
+    80000088:	00b29293          	slli	t0,t0,0xb
+    8000008c:	6ff28293          	addi	t0,t0,1791
+    80000090:	00b29293          	slli	t0,t0,0xb
+    80000094:	3b628293          	addi	t0,t0,950
+    80000098:	00a29293          	slli	t0,t0,0xa
+    8000009c:	3ea28293          	addi	t0,t0,1002
+    800000a0:	6ff77337          	lui	t1,0x6ff77
+    800000a4:	df530313          	addi	t1,t1,-523 # 6ff76df5 <absimmsh+0x644a6048>
+    800000a8:	00b31313          	slli	t1,t1,0xb
+    800000ac:	37f30313          	addi	t1,t1,895
+    800000b0:	00b31313          	slli	t1,t1,0xb
+    800000b4:	5db30313          	addi	t1,t1,1499
+    800000b8:	00a31313          	slli	t1,t1,0xa
+    800000bc:	1f530313          	addi	t1,t1,501
+    800000c0:	b7fbb3b7          	lui	t2,0xb7fbb
+    800000c4:	6fa38393          	addi	t2,t2,1786 # ffffffffb7fbb6fa <absimm+0xfffffffefd2adc2a>
+    800000c8:	00b39393          	slli	t2,t2,0xb
+    800000cc:	5bf38393          	addi	t2,t2,1471
+    800000d0:	00b39393          	slli	t2,t2,0xb
+    800000d4:	6ed38393          	addi	t2,t2,1773
+    800000d8:	00a39393          	slli	t2,t2,0xa
+    800000dc:	2fa38393          	addi	t2,t2,762
+    800000e0:	5bfde437          	lui	s0,0x5bfde
+    800000e4:	b7d40413          	addi	s0,s0,-1155 # 5bfddb7d <absimmsh+0x5050cdd0>
+    800000e8:	00b41413          	slli	s0,s0,0xb
+    800000ec:	2df40413          	addi	s0,s0,735
+    800000f0:	00b41413          	slli	s0,s0,0xb
+    800000f4:	77640413          	addi	s0,s0,1910
+    800000f8:	00a41413          	slli	s0,s0,0xa
+    800000fc:	37d40413          	addi	s0,s0,893
+    80000100:	adfef4b7          	lui	s1,0xadfef
+    80000104:	dbe48493          	addi	s1,s1,-578 # ffffffffadfeedbe <absimm+0xfffffffef32e12ee>
+    80000108:	00b49493          	slli	s1,s1,0xb
+    8000010c:	56f48493          	addi	s1,s1,1391
+    80000110:	00b49493          	slli	s1,s1,0xb
+    80000114:	7bb48493          	addi	s1,s1,1979
+    80000118:	00a49493          	slli	s1,s1,0xa
+    8000011c:	1be48493          	addi	s1,s1,446
+    80000120:	56ff7537          	lui	a0,0x56ff7
+    80000124:	6df50513          	addi	a0,a0,1759 # 56ff76df <absimmsh+0x4b526932>
+    80000128:	00b51513          	slli	a0,a0,0xb
+    8000012c:	2b750513          	addi	a0,a0,695
+    80000130:	00b51513          	slli	a0,a0,0xb
+    80000134:	7dd50513          	addi	a0,a0,2013
+    80000138:	00a51513          	slli	a0,a0,0xa
+    8000013c:	2df50513          	addi	a0,a0,735
+    80000140:	ab7fc5b7          	lui	a1,0xab7fc
+    80000144:	b6f58593          	addi	a1,a1,-1169 # ffffffffab7fbb6f <absimm+0xfffffffef0aee09f>
+    80000148:	00b59593          	slli	a1,a1,0xb
+    8000014c:	55b58593          	addi	a1,a1,1371
+    80000150:	00b59593          	slli	a1,a1,0xb
+    80000154:	7ee58593          	addi	a1,a1,2030
+    80000158:	00a59593          	slli	a1,a1,0xa
+    8000015c:	36f58593          	addi	a1,a1,879
+    80000160:	d5bfe637          	lui	a2,0xd5bfe
+    80000164:	db760613          	addi	a2,a2,-585 # ffffffffd5bfddb7 <absimm+0xffffffff1aef02e7>
+    80000168:	00b61613          	slli	a2,a2,0xb
+    8000016c:	6ad60613          	addi	a2,a2,1709
+    80000170:	00b61613          	slli	a2,a2,0xb
+    80000174:	7f760613          	addi	a2,a2,2039
+    80000178:	00a61613          	slli	a2,a2,0xa
+    8000017c:	1b760613          	addi	a2,a2,439
+    80000180:	eadff6b7          	lui	a3,0xeadff
+    80000184:	edb68693          	addi	a3,a3,-293 # ffffffffeadfeedb <absimm+0xffffffff300f140b>
+    80000188:	00b69693          	slli	a3,a3,0xb
+    8000018c:	75668693          	addi	a3,a3,1878
+    80000190:	00b69693          	slli	a3,a3,0xb
+    80000194:	7fb68693          	addi	a3,a3,2043
+    80000198:	00a69693          	slli	a3,a3,0xa
+    8000019c:	2db68693          	addi	a3,a3,731
+    800001a0:	f56ff737          	lui	a4,0xf56ff
+    800001a4:	76d70713          	addi	a4,a4,1901 # fffffffff56ff76d <absimm+0xffffffff3a9f1c9d>
+    800001a8:	00b71713          	slli	a4,a4,0xb
+    800001ac:	7ab70713          	addi	a4,a4,1963
+    800001b0:	00b71713          	slli	a4,a4,0xb
+    800001b4:	3fd70713          	addi	a4,a4,1021
+    800001b8:	00a71713          	slli	a4,a4,0xa
+    800001bc:	36d70713          	addi	a4,a4,877
+    800001c0:	fab807b7          	lui	a5,0xfab80
+    800001c4:	bb678793          	addi	a5,a5,-1098 # fffffffffab7fbb6 <absimm+0xffffffff3fe720e6>
+    800001c8:	00b79793          	slli	a5,a5,0xb
+    800001cc:	7d578793          	addi	a5,a5,2005
+    800001d0:	00b79793          	slli	a5,a5,0xb
+    800001d4:	5fe78793          	addi	a5,a5,1534
+    800001d8:	00a79793          	slli	a5,a5,0xa
+    800001dc:	3b678793          	addi	a5,a5,950
+    800001e0:	7d5c0837          	lui	a6,0x7d5c0
+    800001e4:	ddb80813          	addi	a6,a6,-549 # 7d5bfddb <absimmsh+0x71aef02e>
+    800001e8:	00b81813          	slli	a6,a6,0xb
+    800001ec:	3ea80813          	addi	a6,a6,1002
+    800001f0:	00b81813          	slli	a6,a6,0xb
+    800001f4:	6ff80813          	addi	a6,a6,1791
+    800001f8:	00a81813          	slli	a6,a6,0xa
+    800001fc:	1db80813          	addi	a6,a6,475
+    80000200:	beae08b7          	lui	a7,0xbeae0
+    80000204:	eed88893          	addi	a7,a7,-275 # ffffffffbeadfeed <absimm+0xffffffff03dd241d>
+    80000208:	00b89893          	slli	a7,a7,0xb
+    8000020c:	5f588893          	addi	a7,a7,1525
+    80000210:	00b89893          	slli	a7,a7,0xb
+    80000214:	37f88893          	addi	a7,a7,895
+    80000218:	00a89893          	slli	a7,a7,0xa
+    8000021c:	2ed88893          	addi	a7,a7,749
+    80000220:	df570937          	lui	s2,0xdf570
+    80000224:	f7690913          	addi	s2,s2,-138 # ffffffffdf56ff76 <absimm+0xffffffff248624a6>
+    80000228:	00b91913          	slli	s2,s2,0xb
+    8000022c:	6fa90913          	addi	s2,s2,1786
+    80000230:	00b91913          	slli	s2,s2,0xb
+    80000234:	5bf90913          	addi	s2,s2,1471
+    80000238:	00a91913          	slli	s2,s2,0xa
+    8000023c:	37690913          	addi	s2,s2,886
+    80000240:	6fab89b7          	lui	s3,0x6fab8
+    80000244:	fbb98993          	addi	s3,s3,-69 # 6fab7fbb <absimmsh+0x63fe720e>
+    80000248:	00b99993          	slli	s3,s3,0xb
+    8000024c:	37d98993          	addi	s3,s3,893
+    80000250:	00b99993          	slli	s3,s3,0xb
+    80000254:	2df98993          	addi	s3,s3,735
+    80000258:	00a99993          	slli	s3,s3,0xa
+    8000025c:	3bb98993          	addi	s3,s3,955
+    80000260:	b7d5ca37          	lui	s4,0xb7d5c
+    80000264:	fdda0a13          	addi	s4,s4,-35 # ffffffffb7d5bfdd <absimm+0xfffffffefd04e50d>
+    80000268:	00ba1a13          	slli	s4,s4,0xb
+    8000026c:	5bea0a13          	addi	s4,s4,1470
+    80000270:	00ba1a13          	slli	s4,s4,0xb
+    80000274:	56fa0a13          	addi	s4,s4,1391
+    80000278:	00aa1a13          	slli	s4,s4,0xa
+    8000027c:	3dda0a13          	addi	s4,s4,989
+    80000280:	dbeaeab7          	lui	s5,0xdbeae
+    80000284:	feea8a93          	addi	s5,s5,-18 # ffffffffdbeadfee <absimm+0xffffffff211a051e>
+    80000288:	00ba9a93          	slli	s5,s5,0xb
+    8000028c:	6dfa8a93          	addi	s5,s5,1759
+    80000290:	00ba9a93          	slli	s5,s5,0xb
+    80000294:	2b7a8a93          	addi	s5,s5,695
+    80000298:	00aa9a93          	slli	s5,s5,0xa
+    8000029c:	3eea8a93          	addi	s5,s5,1006
+    800002a0:	6df57b37          	lui	s6,0x6df57
+    800002a4:	ff7b0b13          	addi	s6,s6,-9 # 6df56ff7 <absimmsh+0x6248624a>
+    800002a8:	00bb1b13          	slli	s6,s6,0xb
+    800002ac:	36fb0b13          	addi	s6,s6,879
+    800002b0:	00bb1b13          	slli	s6,s6,0xb
+    800002b4:	55bb0b13          	addi	s6,s6,1371
+    800002b8:	00ab1b13          	slli	s6,s6,0xa
+    800002bc:	3f7b0b13          	addi	s6,s6,1015
+    800002c0:	b6fabbb7          	lui	s7,0xb6fab
+    800002c4:	7fbb8b93          	addi	s7,s7,2043 # ffffffffb6fab7fb <absimm+0xfffffffefc29dd2b>
+    800002c8:	00bb9b93          	slli	s7,s7,0xb
+    800002cc:	5b7b8b93          	addi	s7,s7,1463
+    800002d0:	00bb9b93          	slli	s7,s7,0xb
+    800002d4:	6adb8b93          	addi	s7,s7,1709
+    800002d8:	00ab9b93          	slli	s7,s7,0xa
+    800002dc:	3fbb8b93          	addi	s7,s7,1019
+    800002e0:	db7d6c37          	lui	s8,0xdb7d6
+    800002e4:	bfdc0c13          	addi	s8,s8,-1027 # ffffffffdb7d5bfd <absimm+0xffffffff20ac812d>
+    800002e8:	00bc1c13          	slli	s8,s8,0xb
+    800002ec:	6dbc0c13          	addi	s8,s8,1755
+    800002f0:	00bc1c13          	slli	s8,s8,0xb
+    800002f4:	756c0c13          	addi	s8,s8,1878
+    800002f8:	00ac1c13          	slli	s8,s8,0xa
+    800002fc:	3fdc0c13          	addi	s8,s8,1021
+    80000300:	edbebcb7          	lui	s9,0xedbeb
+    80000304:	dfec8c93          	addi	s9,s9,-514 # ffffffffedbeadfe <absimm+0xffffffff32edd32e>
+    80000308:	00bc9c93          	slli	s9,s9,0xb
+    8000030c:	76dc8c93          	addi	s9,s9,1901
+    80000310:	00bc9c93          	slli	s9,s9,0xb
+    80000314:	7abc8c93          	addi	s9,s9,1963
+    80000318:	00ac9c93          	slli	s9,s9,0xa
+    8000031c:	1fec8c93          	addi	s9,s9,510
+    80000320:	76df5d37          	lui	s10,0x76df5
+    80000324:	6ffd0d13          	addi	s10,s10,1791 # 76df56ff <absimmsh+0x6b324952>
+    80000328:	00bd1d13          	slli	s10,s10,0xb
+    8000032c:	3b6d0d13          	addi	s10,s10,950
+    80000330:	00bd1d13          	slli	s10,s10,0xb
+    80000334:	7d5d0d13          	addi	s10,s10,2005
+    80000338:	00ad1d13          	slli	s10,s10,0xa
+    8000033c:	2ffd0d13          	addi	s10,s10,767
+    80000340:	bb6fbdb7          	lui	s11,0xbb6fb
+    80000344:	b7fd8d93          	addi	s11,s11,-1153 # ffffffffbb6fab7f <absimm+0xffffffff009ed0af>
+    80000348:	00bd9d93          	slli	s11,s11,0xb
+    8000034c:	5dbd8d93          	addi	s11,s11,1499
+    80000350:	00bd9d93          	slli	s11,s11,0xb
+    80000354:	3ead8d93          	addi	s11,s11,1002
+    80000358:	00ad9d93          	slli	s11,s11,0xa
+    8000035c:	37fd8d93          	addi	s11,s11,895
+    80000360:	ddb7de37          	lui	t3,0xddb7d
+    80000364:	5bfe0e13          	addi	t3,t3,1471 # ffffffffddb7d5bf <absimm+0xffffffff22e6faef>
+    80000368:	00be1e13          	slli	t3,t3,0xb
+    8000036c:	6ede0e13          	addi	t3,t3,1773
+    80000370:	00be1e13          	slli	t3,t3,0xb
+    80000374:	5f5e0e13          	addi	t3,t3,1525
+    80000378:	00ae1e13          	slli	t3,t3,0xa
+    8000037c:	1bfe0e13          	addi	t3,t3,447
+    80000380:	eedbfeb7          	lui	t4,0xeedbf
+    80000384:	adfe8e93          	addi	t4,t4,-1313 # ffffffffeedbeadf <absimm+0xffffffff340b100f>
+    80000388:	00be9e93          	slli	t4,t4,0xb
+    8000038c:	776e8e93          	addi	t4,t4,1910
+    80000390:	00be9e93          	slli	t4,t4,0xb
+    80000394:	6fae8e93          	addi	t4,t4,1786
+    80000398:	00ae9e93          	slli	t4,t4,0xa
+    8000039c:	2dfe8e93          	addi	t4,t4,735
+    800003a0:	f76dff37          	lui	t5,0xf76df
+    800003a4:	56ff0f13          	addi	t5,t5,1391 # fffffffff76df56f <absimm+0xffffffff3c9d1a9f>
+    800003a8:	00bf1f13          	slli	t5,t5,0xb
+    800003ac:	7bbf0f13          	addi	t5,t5,1979
+    800003b0:	00bf1f13          	slli	t5,t5,0xb
+    800003b4:	37df0f13          	addi	t5,t5,893
+    800003b8:	00af1f13          	slli	t5,t5,0xa
+    800003bc:	16ff0f13          	addi	t5,t5,367
+    800003c0:	fbb70fb7          	lui	t6,0xfbb70
+    800003c4:	ab7f8f93          	addi	t6,t6,-1353 # fffffffffbb6fab7 <absimm+0xffffffff40e61fe7>
+    800003c8:	00bf9f93          	slli	t6,t6,0xb
+    800003cc:	7ddf8f93          	addi	t6,t6,2013
+    800003d0:	00bf9f93          	slli	t6,t6,0xb
+    800003d4:	5bef8f93          	addi	t6,t6,1470
+    800003d8:	00af9f93          	slli	t6,t6,0xa
+    800003dc:	2b7f8f93          	addi	t6,t6,695
+
+00000000800003e0 <rvtest_code_begin>:
+    800003e0:	00003417          	auipc	s0,0x3
+    800003e4:	3a040413          	addi	s0,s0,928 # 80003780 <signature>
+
+00000000800003e8 <CBOMTest_inval_step1>:
+    800003e8:	00002517          	auipc	a0,0x2
+    800003ec:	e1850513          	addi	a0,a0,-488 # 80002200 <SourceData>
+    800003f0:	00003597          	auipc	a1,0x3
+    800003f4:	d9058593          	addi	a1,a1,-624 # 80003180 <Destination1>
+    800003f8:	04000613          	li	a2,64
+    800003fc:	6c4000ef          	jal	80000ac0 <memcpy8>
+
+0000000080000400 <CBOMTest_inval_step2>:
+    80000400:	00002517          	auipc	a0,0x2
+    80000404:	e0050513          	addi	a0,a0,-512 # 80002200 <SourceData>
+    80000408:	00003597          	auipc	a1,0x3
+    8000040c:	d7858593          	addi	a1,a1,-648 # 80003180 <Destination1>
+    80000410:	04000613          	li	a2,64
+    80000414:	6d4000ef          	jal	80000ae8 <memcmp8>
+    80000418:	00a43023          	sd	a0,0(s0)
+    8000041c:	00840413          	addi	s0,s0,8
+
+0000000080000420 <CBOMTest_inval_step3>:
+    80000420:	00003597          	auipc	a1,0x3
+    80000424:	d6058593          	addi	a1,a1,-672 # 80003180 <Destination1>
+    80000428:	0005a00f          	cbo.inval	(a1)
+    8000042c:	00002517          	auipc	a0,0x2
+    80000430:	bd450513          	addi	a0,a0,-1068 # 80002000 <rvtest_data_begin>
+    80000434:	00003597          	auipc	a1,0x3
+    80000438:	d4c58593          	addi	a1,a1,-692 # 80003180 <Destination1>
+    8000043c:	00800613          	li	a2,8
+    80000440:	6a8000ef          	jal	80000ae8 <memcmp8>
+    80000444:	00a43023          	sd	a0,0(s0)
+    80000448:	00840413          	addi	s0,s0,8
+
+000000008000044c <CBOMTest_inval_step4>:
+    8000044c:	00002517          	auipc	a0,0x2
+    80000450:	df450513          	addi	a0,a0,-524 # 80002240 <SourceData+0x40>
+    80000454:	00003597          	auipc	a1,0x3
+    80000458:	d6c58593          	addi	a1,a1,-660 # 800031c0 <Destination1+0x40>
+    8000045c:	00800613          	li	a2,8
+    80000460:	688000ef          	jal	80000ae8 <memcmp8>
+    80000464:	00a43023          	sd	a0,0(s0)
+    80000468:	00840413          	addi	s0,s0,8
+
+000000008000046c <CBOMTest_inval_step3_all>:
+    8000046c:	00003597          	auipc	a1,0x3
+    80000470:	d5458593          	addi	a1,a1,-684 # 800031c0 <Destination1+0x40>
+    80000474:	0005a00f          	cbo.inval	(a1)
+    80000478:	0005a00f          	cbo.inval	(a1)
+    8000047c:	00003597          	auipc	a1,0x3
+    80000480:	d8458593          	addi	a1,a1,-636 # 80003200 <Destination1+0x80>
+    80000484:	0005a00f          	cbo.inval	(a1)
+    80000488:	00003597          	auipc	a1,0x3
+    8000048c:	db858593          	addi	a1,a1,-584 # 80003240 <Destination1+0xc0>
+    80000490:	0005a00f          	cbo.inval	(a1)
+    80000494:	00003597          	auipc	a1,0x3
+    80000498:	dec58593          	addi	a1,a1,-532 # 80003280 <Destination1+0x100>
+    8000049c:	0005a00f          	cbo.inval	(a1)
+    800004a0:	00003597          	auipc	a1,0x3
+    800004a4:	e2058593          	addi	a1,a1,-480 # 800032c0 <Destination1+0x140>
+    800004a8:	0005a00f          	cbo.inval	(a1)
+    800004ac:	00003597          	auipc	a1,0x3
+    800004b0:	e5458593          	addi	a1,a1,-428 # 80003300 <Destination1+0x180>
+    800004b4:	0005a00f          	cbo.inval	(a1)
+    800004b8:	00003597          	auipc	a1,0x3
+    800004bc:	e8858593          	addi	a1,a1,-376 # 80003340 <Destination1+0x1c0>
+    800004c0:	0005a00f          	cbo.inval	(a1)
+
+00000000800004c4 <CBOMTest_inval_step4_all>:
+    800004c4:	00002517          	auipc	a0,0x2
+    800004c8:	b3c50513          	addi	a0,a0,-1220 # 80002000 <rvtest_data_begin>
+    800004cc:	00003597          	auipc	a1,0x3
+    800004d0:	cb458593          	addi	a1,a1,-844 # 80003180 <Destination1>
+    800004d4:	04000613          	li	a2,64
+    800004d8:	610000ef          	jal	80000ae8 <memcmp8>
+    800004dc:	00a43023          	sd	a0,0(s0)
+    800004e0:	00840413          	addi	s0,s0,8
+
+00000000800004e4 <CBOMTest_way_inval_4096_step0>:
+    800004e4:	00002517          	auipc	a0,0x2
+    800004e8:	b1c50513          	addi	a0,a0,-1252 # 80002000 <rvtest_data_begin>
+    800004ec:	00004597          	auipc	a1,0x4
+    800004f0:	c9458593          	addi	a1,a1,-876 # 80004180 <_end+0x940>
+    800004f4:	00800613          	li	a2,8
+    800004f8:	5c8000ef          	jal	80000ac0 <memcpy8>
+
+00000000800004fc <CBOMTest_way_inval_8192_step0>:
+    800004fc:	00002517          	auipc	a0,0x2
+    80000500:	b0450513          	addi	a0,a0,-1276 # 80002000 <rvtest_data_begin>
+    80000504:	00005597          	auipc	a1,0x5
+    80000508:	c7c58593          	addi	a1,a1,-900 # 80005180 <_end+0x1940>
+    8000050c:	00800613          	li	a2,8
+    80000510:	5b0000ef          	jal	80000ac0 <memcpy8>
+
+0000000080000514 <CBOMTest_way_inval_12288_step0>:
+    80000514:	00002517          	auipc	a0,0x2
+    80000518:	aec50513          	addi	a0,a0,-1300 # 80002000 <rvtest_data_begin>
+    8000051c:	00006597          	auipc	a1,0x6
+    80000520:	c6458593          	addi	a1,a1,-924 # 80006180 <_end+0x2940>
+    80000524:	00800613          	li	a2,8
+    80000528:	598000ef          	jal	80000ac0 <memcpy8>
+
+000000008000052c <CBOMTest_way_inval_16384_step0>:
+    8000052c:	00002517          	auipc	a0,0x2
+    80000530:	ad450513          	addi	a0,a0,-1324 # 80002000 <rvtest_data_begin>
+    80000534:	00007597          	auipc	a1,0x7
+    80000538:	c4c58593          	addi	a1,a1,-948 # 80007180 <_end+0x3940>
+    8000053c:	00800613          	li	a2,8
+    80000540:	580000ef          	jal	80000ac0 <memcpy8>
+
+0000000080000544 <CBOMTest_way_inval_20480_step0>:
+    80000544:	00002517          	auipc	a0,0x2
+    80000548:	abc50513          	addi	a0,a0,-1348 # 80002000 <rvtest_data_begin>
+    8000054c:	00008597          	auipc	a1,0x8
+    80000550:	c3458593          	addi	a1,a1,-972 # 80008180 <_end+0x4940>
+    80000554:	00800613          	li	a2,8
+    80000558:	568000ef          	jal	80000ac0 <memcpy8>
+
+000000008000055c <CBOMTest_way_inval_24576_step0>:
+    8000055c:	00002517          	auipc	a0,0x2
+    80000560:	aa450513          	addi	a0,a0,-1372 # 80002000 <rvtest_data_begin>
+    80000564:	00009597          	auipc	a1,0x9
+    80000568:	c1c58593          	addi	a1,a1,-996 # 80009180 <_end+0x5940>
+    8000056c:	00800613          	li	a2,8
+    80000570:	550000ef          	jal	80000ac0 <memcpy8>
+
+0000000080000574 <CBOMTest_way_inval_28672_step0>:
+    80000574:	00002517          	auipc	a0,0x2
+    80000578:	a8c50513          	addi	a0,a0,-1396 # 80002000 <rvtest_data_begin>
+    8000057c:	0000a597          	auipc	a1,0xa
+    80000580:	c0458593          	addi	a1,a1,-1020 # 8000a180 <_end+0x6940>
+    80000584:	00800613          	li	a2,8
+    80000588:	538000ef          	jal	80000ac0 <memcpy8>
+
+000000008000058c <CBOMTest_way_inval_32768_step0>:
+    8000058c:	00002517          	auipc	a0,0x2
+    80000590:	a7450513          	addi	a0,a0,-1420 # 80002000 <rvtest_data_begin>
+    80000594:	0000b597          	auipc	a1,0xb
+    80000598:	bec58593          	addi	a1,a1,-1044 # 8000b180 <_end+0x7940>
+    8000059c:	00800613          	li	a2,8
+    800005a0:	520000ef          	jal	80000ac0 <memcpy8>
+
+00000000800005a4 <CBOMTest_way_inval_4096_step1>:
+    800005a4:	00002517          	auipc	a0,0x2
+    800005a8:	c5c50513          	addi	a0,a0,-932 # 80002200 <SourceData>
+    800005ac:	00004597          	auipc	a1,0x4
+    800005b0:	bd458593          	addi	a1,a1,-1068 # 80004180 <_end+0x940>
+    800005b4:	00800613          	li	a2,8
+    800005b8:	508000ef          	jal	80000ac0 <memcpy8>
+
+00000000800005bc <CBOMTest_way_inval_8192_step1>:
+    800005bc:	00002517          	auipc	a0,0x2
+    800005c0:	c4450513          	addi	a0,a0,-956 # 80002200 <SourceData>
+    800005c4:	00005597          	auipc	a1,0x5
+    800005c8:	bbc58593          	addi	a1,a1,-1092 # 80005180 <_end+0x1940>
+    800005cc:	00800613          	li	a2,8
+    800005d0:	4f0000ef          	jal	80000ac0 <memcpy8>
+
+00000000800005d4 <CBOMTest_way_inval_12288_step1>:
+    800005d4:	00002517          	auipc	a0,0x2
+    800005d8:	c2c50513          	addi	a0,a0,-980 # 80002200 <SourceData>
+    800005dc:	00006597          	auipc	a1,0x6
+    800005e0:	ba458593          	addi	a1,a1,-1116 # 80006180 <_end+0x2940>
+    800005e4:	00800613          	li	a2,8
+    800005e8:	4d8000ef          	jal	80000ac0 <memcpy8>
+
+00000000800005ec <CBOMTest_way_inval_16384_step1>:
+    800005ec:	00002517          	auipc	a0,0x2
+    800005f0:	c1450513          	addi	a0,a0,-1004 # 80002200 <SourceData>
+    800005f4:	00007597          	auipc	a1,0x7
+    800005f8:	b8c58593          	addi	a1,a1,-1140 # 80007180 <_end+0x3940>
+    800005fc:	00800613          	li	a2,8
+    80000600:	4c0000ef          	jal	80000ac0 <memcpy8>
+
+0000000080000604 <CBOMTest_way_inval_4096_step2>:
+    80000604:	00002517          	auipc	a0,0x2
+    80000608:	bfc50513          	addi	a0,a0,-1028 # 80002200 <SourceData>
+    8000060c:	00004597          	auipc	a1,0x4
+    80000610:	b7458593          	addi	a1,a1,-1164 # 80004180 <_end+0x940>
+    80000614:	00800613          	li	a2,8
+    80000618:	4d0000ef          	jal	80000ae8 <memcmp8>
+    8000061c:	00a43023          	sd	a0,0(s0)
+    80000620:	00840413          	addi	s0,s0,8
+
+0000000080000624 <CBOMTest_way_inval_8192_step2>:
+    80000624:	00002517          	auipc	a0,0x2
+    80000628:	bdc50513          	addi	a0,a0,-1060 # 80002200 <SourceData>
+    8000062c:	00005597          	auipc	a1,0x5
+    80000630:	b5458593          	addi	a1,a1,-1196 # 80005180 <_end+0x1940>
+    80000634:	00800613          	li	a2,8
+    80000638:	4b0000ef          	jal	80000ae8 <memcmp8>
+    8000063c:	00a43023          	sd	a0,0(s0)
+    80000640:	00840413          	addi	s0,s0,8
+
+0000000080000644 <CBOMTest_way_inval_12288_step2>:
+    80000644:	00002517          	auipc	a0,0x2
+    80000648:	bbc50513          	addi	a0,a0,-1092 # 80002200 <SourceData>
+    8000064c:	00006597          	auipc	a1,0x6
+    80000650:	b3458593          	addi	a1,a1,-1228 # 80006180 <_end+0x2940>
+    80000654:	00800613          	li	a2,8
+    80000658:	490000ef          	jal	80000ae8 <memcmp8>
+    8000065c:	00a43023          	sd	a0,0(s0)
+    80000660:	00840413          	addi	s0,s0,8
+
+0000000080000664 <CBOMTest_way_inval_16384_step2>:
+    80000664:	00002517          	auipc	a0,0x2
+    80000668:	b9c50513          	addi	a0,a0,-1124 # 80002200 <SourceData>
+    8000066c:	00007597          	auipc	a1,0x7
+    80000670:	b1458593          	addi	a1,a1,-1260 # 80007180 <_end+0x3940>
+    80000674:	00800613          	li	a2,8
+    80000678:	470000ef          	jal	80000ae8 <memcmp8>
+    8000067c:	00a43023          	sd	a0,0(s0)
+    80000680:	00840413          	addi	s0,s0,8
+
+0000000080000684 <CBOMTest_way_inval_step3_all_again>:
+    80000684:	00004597          	auipc	a1,0x4
+    80000688:	afc58593          	addi	a1,a1,-1284 # 80004180 <_end+0x940>
+    8000068c:	00005617          	auipc	a2,0x5
+    80000690:	af460613          	addi	a2,a2,-1292 # 80005180 <_end+0x1940>
+    80000694:	00006697          	auipc	a3,0x6
+    80000698:	aec68693          	addi	a3,a3,-1300 # 80006180 <_end+0x2940>
+    8000069c:	00007717          	auipc	a4,0x7
+    800006a0:	ae470713          	addi	a4,a4,-1308 # 80007180 <_end+0x3940>
+    800006a4:	0005a00f          	cbo.inval	(a1)
+    800006a8:	0006200f          	cbo.inval	(a2)
+    800006ac:	0006a00f          	cbo.inval	(a3)
+    800006b0:	0007200f          	cbo.inval	(a4)
+
+00000000800006b4 <CBOMTest_way_inval_4096_step4_all>:
+    800006b4:	00002517          	auipc	a0,0x2
+    800006b8:	94c50513          	addi	a0,a0,-1716 # 80002000 <rvtest_data_begin>
+    800006bc:	00004597          	auipc	a1,0x4
+    800006c0:	ac458593          	addi	a1,a1,-1340 # 80004180 <_end+0x940>
+    800006c4:	00800613          	li	a2,8
+    800006c8:	420000ef          	jal	80000ae8 <memcmp8>
+    800006cc:	00a43023          	sd	a0,0(s0)
+    800006d0:	00840413          	addi	s0,s0,8
+
+00000000800006d4 <CBOMTest_way_inval_8192_step4_all>:
+    800006d4:	00002517          	auipc	a0,0x2
+    800006d8:	92c50513          	addi	a0,a0,-1748 # 80002000 <rvtest_data_begin>
+    800006dc:	00005597          	auipc	a1,0x5
+    800006e0:	aa458593          	addi	a1,a1,-1372 # 80005180 <_end+0x1940>
+    800006e4:	00800613          	li	a2,8
+    800006e8:	400000ef          	jal	80000ae8 <memcmp8>
+    800006ec:	00a43023          	sd	a0,0(s0)
+    800006f0:	00840413          	addi	s0,s0,8
+
+00000000800006f4 <CBOMTest_way_inval_12288_step4_all>:
+    800006f4:	00002517          	auipc	a0,0x2
+    800006f8:	90c50513          	addi	a0,a0,-1780 # 80002000 <rvtest_data_begin>
+    800006fc:	00006597          	auipc	a1,0x6
+    80000700:	a8458593          	addi	a1,a1,-1404 # 80006180 <_end+0x2940>
+    80000704:	00800613          	li	a2,8
+    80000708:	3e0000ef          	jal	80000ae8 <memcmp8>
+    8000070c:	00a43023          	sd	a0,0(s0)
+    80000710:	00840413          	addi	s0,s0,8
+
+0000000080000714 <CBOMTest_way_inval_16384_step4_all>:
+    80000714:	00002517          	auipc	a0,0x2
+    80000718:	8ec50513          	addi	a0,a0,-1812 # 80002000 <rvtest_data_begin>
+    8000071c:	00007597          	auipc	a1,0x7
+    80000720:	a6458593          	addi	a1,a1,-1436 # 80007180 <_end+0x3940>
+    80000724:	00800613          	li	a2,8
+    80000728:	3c0000ef          	jal	80000ae8 <memcmp8>
+    8000072c:	00a43023          	sd	a0,0(s0)
+    80000730:	00840413          	addi	s0,s0,8
+
+0000000080000734 <CBOMTest_clean_step1>:
+    80000734:	00002517          	auipc	a0,0x2
+    80000738:	acc50513          	addi	a0,a0,-1332 # 80002200 <SourceData>
+    8000073c:	00003597          	auipc	a1,0x3
+    80000740:	c4458593          	addi	a1,a1,-956 # 80003380 <Destination2>
+    80000744:	04000613          	li	a2,64
+    80000748:	378000ef          	jal	80000ac0 <memcpy8>
+
+000000008000074c <CBOMTest_clean_step2>:
+    8000074c:	00002517          	auipc	a0,0x2
+    80000750:	ab450513          	addi	a0,a0,-1356 # 80002200 <SourceData>
+    80000754:	00003597          	auipc	a1,0x3
+    80000758:	c2c58593          	addi	a1,a1,-980 # 80003380 <Destination2>
+    8000075c:	04000613          	li	a2,64
+    80000760:	388000ef          	jal	80000ae8 <memcmp8>
+    80000764:	00a43023          	sd	a0,0(s0)
+    80000768:	00840413          	addi	s0,s0,8
+
+000000008000076c <CBOMTest_clean_step3>:
+    8000076c:	00003597          	auipc	a1,0x3
+    80000770:	c1458593          	addi	a1,a1,-1004 # 80003380 <Destination2>
+    80000774:	0005a00f          	cbo.inval	(a1)
+    80000778:	00003597          	auipc	a1,0x3
+    8000077c:	c4858593          	addi	a1,a1,-952 # 800033c0 <Destination2+0x40>
+    80000780:	0005a00f          	cbo.inval	(a1)
+    80000784:	00003597          	auipc	a1,0x3
+    80000788:	c7c58593          	addi	a1,a1,-900 # 80003400 <Destination2+0x80>
+    8000078c:	0005a00f          	cbo.inval	(a1)
+    80000790:	00003597          	auipc	a1,0x3
+    80000794:	cb058593          	addi	a1,a1,-848 # 80003440 <Destination2+0xc0>
+    80000798:	0005a00f          	cbo.inval	(a1)
+    8000079c:	00003597          	auipc	a1,0x3
+    800007a0:	ce458593          	addi	a1,a1,-796 # 80003480 <Destination2+0x100>
+    800007a4:	0005a00f          	cbo.inval	(a1)
+    800007a8:	00003597          	auipc	a1,0x3
+    800007ac:	d1858593          	addi	a1,a1,-744 # 800034c0 <Destination2+0x140>
+    800007b0:	0005a00f          	cbo.inval	(a1)
+    800007b4:	00003597          	auipc	a1,0x3
+    800007b8:	d4c58593          	addi	a1,a1,-692 # 80003500 <Destination2+0x180>
+    800007bc:	0005a00f          	cbo.inval	(a1)
+    800007c0:	00003597          	auipc	a1,0x3
+    800007c4:	d8058593          	addi	a1,a1,-640 # 80003540 <Destination2+0x1c0>
+    800007c8:	0005a00f          	cbo.inval	(a1)
+    800007cc:	0005a00f          	cbo.inval	(a1)
+    800007d0:	0005a00f          	cbo.inval	(a1)
+    800007d4:	0005a00f          	cbo.inval	(a1)
+    800007d8:	0005a00f          	cbo.inval	(a1)
+    800007dc:	0005a00f          	cbo.inval	(a1)
+    800007e0:	0005a00f          	cbo.inval	(a1)
+    800007e4:	0005a00f          	cbo.inval	(a1)
+    800007e8:	0005a00f          	cbo.inval	(a1)
+    800007ec:	0005a00f          	cbo.inval	(a1)
+
+00000000800007f0 <CBOMTest_clean_step4>:
+    800007f0:	00002517          	auipc	a0,0x2
+    800007f4:	81050513          	addi	a0,a0,-2032 # 80002000 <rvtest_data_begin>
+    800007f8:	00003597          	auipc	a1,0x3
+    800007fc:	b8858593          	addi	a1,a1,-1144 # 80003380 <Destination2>
+    80000800:	04000613          	li	a2,64
+    80000804:	2e4000ef          	jal	80000ae8 <memcmp8>
+    80000808:	00a43023          	sd	a0,0(s0)
+    8000080c:	00840413          	addi	s0,s0,8
+
+0000000080000810 <CBOMTest_clean_step5>:
+    80000810:	00002517          	auipc	a0,0x2
+    80000814:	9f050513          	addi	a0,a0,-1552 # 80002200 <SourceData>
+    80000818:	00003597          	auipc	a1,0x3
+    8000081c:	b6858593          	addi	a1,a1,-1176 # 80003380 <Destination2>
+    80000820:	04000613          	li	a2,64
+    80000824:	29c000ef          	jal	80000ac0 <memcpy8>
+
+0000000080000828 <CBOMTest_clean_step6>:
+    80000828:	00003597          	auipc	a1,0x3
+    8000082c:	b5858593          	addi	a1,a1,-1192 # 80003380 <Destination2>
+    80000830:	0015a00f          	cbo.clean	(a1)
+
+0000000080000834 <CBOMTest_clean_step7>:
+    80000834:	00002517          	auipc	a0,0x2
+    80000838:	9cc50513          	addi	a0,a0,-1588 # 80002200 <SourceData>
+    8000083c:	00003597          	auipc	a1,0x3
+    80000840:	b4458593          	addi	a1,a1,-1212 # 80003380 <Destination2>
+    80000844:	00800613          	li	a2,8
+    80000848:	2a0000ef          	jal	80000ae8 <memcmp8>
+    8000084c:	00a43023          	sd	a0,0(s0)
+    80000850:	00840413          	addi	s0,s0,8
+
+0000000080000854 <CBOMTest_clean_step8>:
+    80000854:	00003597          	auipc	a1,0x3
+    80000858:	b2c58593          	addi	a1,a1,-1236 # 80003380 <Destination2>
+    8000085c:	0005a00f          	cbo.inval	(a1)
+    80000860:	00003597          	auipc	a1,0x3
+    80000864:	b6058593          	addi	a1,a1,-1184 # 800033c0 <Destination2+0x40>
+    80000868:	0005a00f          	cbo.inval	(a1)
+
+000000008000086c <CBOMTest_clean_step9_line1>:
+    8000086c:	00002517          	auipc	a0,0x2
+    80000870:	99450513          	addi	a0,a0,-1644 # 80002200 <SourceData>
+    80000874:	00003597          	auipc	a1,0x3
+    80000878:	b0c58593          	addi	a1,a1,-1268 # 80003380 <Destination2>
+    8000087c:	00800613          	li	a2,8
+    80000880:	268000ef          	jal	80000ae8 <memcmp8>
+    80000884:	00a43023          	sd	a0,0(s0)
+    80000888:	00840413          	addi	s0,s0,8
+
+000000008000088c <CBOMTest_clean_step9_line2>:
+    8000088c:	00001517          	auipc	a0,0x1
+    80000890:	77450513          	addi	a0,a0,1908 # 80002000 <rvtest_data_begin>
+    80000894:	00003597          	auipc	a1,0x3
+    80000898:	b2c58593          	addi	a1,a1,-1236 # 800033c0 <Destination2+0x40>
+    8000089c:	00800613          	li	a2,8
+    800008a0:	248000ef          	jal	80000ae8 <memcmp8>
+    800008a4:	00a43023          	sd	a0,0(s0)
+    800008a8:	00840413          	addi	s0,s0,8
+
+00000000800008ac <CBOMTest_clean_step5_recopy_line2>:
+    800008ac:	00002517          	auipc	a0,0x2
+    800008b0:	99450513          	addi	a0,a0,-1644 # 80002240 <SourceData+0x40>
+    800008b4:	00003597          	auipc	a1,0x3
+    800008b8:	b0c58593          	addi	a1,a1,-1268 # 800033c0 <Destination2+0x40>
+    800008bc:	00800613          	li	a2,8
+    800008c0:	200000ef          	jal	80000ac0 <memcpy8>
+
+00000000800008c4 <CBOMTest_clean_step6_clean_all>:
+    800008c4:	00003597          	auipc	a1,0x3
+    800008c8:	afc58593          	addi	a1,a1,-1284 # 800033c0 <Destination2+0x40>
+    800008cc:	0015a00f          	cbo.clean	(a1)
+    800008d0:	00003597          	auipc	a1,0x3
+    800008d4:	b3058593          	addi	a1,a1,-1232 # 80003400 <Destination2+0x80>
+    800008d8:	0015a00f          	cbo.clean	(a1)
+    800008dc:	00003597          	auipc	a1,0x3
+    800008e0:	b6458593          	addi	a1,a1,-1180 # 80003440 <Destination2+0xc0>
+    800008e4:	0015a00f          	cbo.clean	(a1)
+    800008e8:	00003597          	auipc	a1,0x3
+    800008ec:	b9858593          	addi	a1,a1,-1128 # 80003480 <Destination2+0x100>
+    800008f0:	0015a00f          	cbo.clean	(a1)
+    800008f4:	00003597          	auipc	a1,0x3
+    800008f8:	bcc58593          	addi	a1,a1,-1076 # 800034c0 <Destination2+0x140>
+    800008fc:	0015a00f          	cbo.clean	(a1)
+    80000900:	00003597          	auipc	a1,0x3
+    80000904:	c0058593          	addi	a1,a1,-1024 # 80003500 <Destination2+0x180>
+    80000908:	0015a00f          	cbo.clean	(a1)
+    8000090c:	00003597          	auipc	a1,0x3
+    80000910:	c3458593          	addi	a1,a1,-972 # 80003540 <Destination2+0x1c0>
+    80000914:	0015a00f          	cbo.clean	(a1)
+    80000918:	0015a00f          	cbo.clean	(a1)
+    8000091c:	0015a00f          	cbo.clean	(a1)
+    80000920:	0015a00f          	cbo.clean	(a1)
+    80000924:	0015a00f          	cbo.clean	(a1)
+    80000928:	0015a00f          	cbo.clean	(a1)
+    8000092c:	0015a00f          	cbo.clean	(a1)
+    80000930:	0015a00f          	cbo.clean	(a1)
+    80000934:	0015a00f          	cbo.clean	(a1)
+
+0000000080000938 <CBOMTest_clean_step7_invalidate_all>:
+    80000938:	00003597          	auipc	a1,0x3
+    8000093c:	a4858593          	addi	a1,a1,-1464 # 80003380 <Destination2>
+    80000940:	0005a00f          	cbo.inval	(a1)
+    80000944:	00003597          	auipc	a1,0x3
+    80000948:	a7c58593          	addi	a1,a1,-1412 # 800033c0 <Destination2+0x40>
+    8000094c:	0005a00f          	cbo.inval	(a1)
+    80000950:	00003597          	auipc	a1,0x3
+    80000954:	ab058593          	addi	a1,a1,-1360 # 80003400 <Destination2+0x80>
+    80000958:	0005a00f          	cbo.inval	(a1)
+    8000095c:	00003597          	auipc	a1,0x3
+    80000960:	ae458593          	addi	a1,a1,-1308 # 80003440 <Destination2+0xc0>
+    80000964:	0005a00f          	cbo.inval	(a1)
+    80000968:	00003597          	auipc	a1,0x3
+    8000096c:	b1858593          	addi	a1,a1,-1256 # 80003480 <Destination2+0x100>
+    80000970:	0005a00f          	cbo.inval	(a1)
+    80000974:	00003597          	auipc	a1,0x3
+    80000978:	b4c58593          	addi	a1,a1,-1204 # 800034c0 <Destination2+0x140>
+    8000097c:	0005a00f          	cbo.inval	(a1)
+    80000980:	00003597          	auipc	a1,0x3
+    80000984:	b8058593          	addi	a1,a1,-1152 # 80003500 <Destination2+0x180>
+    80000988:	0005a00f          	cbo.inval	(a1)
+    8000098c:	00003597          	auipc	a1,0x3
+    80000990:	bb458593          	addi	a1,a1,-1100 # 80003540 <Destination2+0x1c0>
+    80000994:	0005a00f          	cbo.inval	(a1)
+
+0000000080000998 <CBOMTest_clean_step9_check_all>:
+    80000998:	00002517          	auipc	a0,0x2
+    8000099c:	86850513          	addi	a0,a0,-1944 # 80002200 <SourceData>
+    800009a0:	00003597          	auipc	a1,0x3
+    800009a4:	9e058593          	addi	a1,a1,-1568 # 80003380 <Destination2>
+    800009a8:	04000613          	li	a2,64
+    800009ac:	13c000ef          	jal	80000ae8 <memcmp8>
+    800009b0:	00a43023          	sd	a0,0(s0)
+    800009b4:	00840413          	addi	s0,s0,8
+
+00000000800009b8 <CBOMTest_flush_step1>:
+    800009b8:	00002517          	auipc	a0,0x2
+    800009bc:	84850513          	addi	a0,a0,-1976 # 80002200 <SourceData>
+    800009c0:	00003597          	auipc	a1,0x3
+    800009c4:	bc058593          	addi	a1,a1,-1088 # 80003580 <Destination3>
+    800009c8:	04000613          	li	a2,64
+    800009cc:	0f4000ef          	jal	80000ac0 <memcpy8>
+
+00000000800009d0 <CBOMTest_flush_step2_verify>:
+    800009d0:	00002517          	auipc	a0,0x2
+    800009d4:	83050513          	addi	a0,a0,-2000 # 80002200 <SourceData>
+    800009d8:	00003597          	auipc	a1,0x3
+    800009dc:	ba858593          	addi	a1,a1,-1112 # 80003580 <Destination3>
+    800009e0:	04000613          	li	a2,64
+    800009e4:	104000ef          	jal	80000ae8 <memcmp8>
+    800009e8:	00a43023          	sd	a0,0(s0)
+    800009ec:	00840413          	addi	s0,s0,8
+
+00000000800009f0 <CBOMTest_flush_step3>:
+    800009f0:	00003597          	auipc	a1,0x3
+    800009f4:	b9058593          	addi	a1,a1,-1136 # 80003580 <Destination3>
+    800009f8:	0025a00f          	cbo.flush	(a1)
+
+00000000800009fc <CBOMTest_flush_step4_verify>:
+    800009fc:	00002517          	auipc	a0,0x2
+    80000a00:	80450513          	addi	a0,a0,-2044 # 80002200 <SourceData>
+    80000a04:	00003597          	auipc	a1,0x3
+    80000a08:	b7c58593          	addi	a1,a1,-1156 # 80003580 <Destination3>
+    80000a0c:	04000613          	li	a2,64
+    80000a10:	0d8000ef          	jal	80000ae8 <memcmp8>
+    80000a14:	00a43023          	sd	a0,0(s0)
+    80000a18:	00840413          	addi	s0,s0,8
+
+0000000080000a1c <CBOMTest_flush_step5_flush_all>:
+    80000a1c:	00003597          	auipc	a1,0x3
+    80000a20:	b6458593          	addi	a1,a1,-1180 # 80003580 <Destination3>
+    80000a24:	0025a00f          	cbo.flush	(a1)
+    80000a28:	00003597          	auipc	a1,0x3
+    80000a2c:	b9858593          	addi	a1,a1,-1128 # 800035c0 <Destination3+0x40>
+    80000a30:	0025a00f          	cbo.flush	(a1)
+    80000a34:	00003597          	auipc	a1,0x3
+    80000a38:	bcc58593          	addi	a1,a1,-1076 # 80003600 <Destination3+0x80>
+    80000a3c:	0025a00f          	cbo.flush	(a1)
+    80000a40:	00003597          	auipc	a1,0x3
+    80000a44:	c0058593          	addi	a1,a1,-1024 # 80003640 <Destination3+0xc0>
+    80000a48:	0025a00f          	cbo.flush	(a1)
+    80000a4c:	00003597          	auipc	a1,0x3
+    80000a50:	c3458593          	addi	a1,a1,-972 # 80003680 <Destination3+0x100>
+    80000a54:	0025a00f          	cbo.flush	(a1)
+    80000a58:	00003597          	auipc	a1,0x3
+    80000a5c:	c6858593          	addi	a1,a1,-920 # 800036c0 <Destination3+0x140>
+    80000a60:	0025a00f          	cbo.flush	(a1)
+    80000a64:	00003597          	auipc	a1,0x3
+    80000a68:	c9c58593          	addi	a1,a1,-868 # 80003700 <Destination3+0x180>
+    80000a6c:	0025a00f          	cbo.flush	(a1)
+    80000a70:	00003597          	auipc	a1,0x3
+    80000a74:	cd058593          	addi	a1,a1,-816 # 80003740 <Destination3+0x1c0>
+    80000a78:	0025a00f          	cbo.flush	(a1)
+    80000a7c:	0025a00f          	cbo.flush	(a1)
+    80000a80:	0025a00f          	cbo.flush	(a1)
+    80000a84:	0025a00f          	cbo.flush	(a1)
+    80000a88:	0025a00f          	cbo.flush	(a1)
+    80000a8c:	0025a00f          	cbo.flush	(a1)
+
+0000000080000a90 <CBOMTest_flush_step6_verify>:
+    80000a90:	00001517          	auipc	a0,0x1
+    80000a94:	77050513          	addi	a0,a0,1904 # 80002200 <SourceData>
+    80000a98:	00003597          	auipc	a1,0x3
+    80000a9c:	ae858593          	addi	a1,a1,-1304 # 80003580 <Destination3>
+    80000aa0:	04000613          	li	a2,64
+    80000aa4:	044000ef          	jal	80000ae8 <memcmp8>
+    80000aa8:	00a43023          	sd	a0,0(s0)
+    80000aac:	00840413          	addi	s0,s0,8
+    80000ab0:	00100093          	li	ra,1
+
+0000000080000ab4 <write_tohost>:
+    80000ab4:	00000297          	auipc	t0,0x0
+    80000ab8:	5412a623          	sw	ra,1356(t0) # 80001000 <tohost>
+    80000abc:	ff9ff06f          	j	80000ab4 <write_tohost>
+
+0000000080000ac0 <memcpy8>:
+    80000ac0:	00050293          	mv	t0,a0
+    80000ac4:	00058313          	mv	t1,a1
+    80000ac8:	00000393          	li	t2,0
+
+0000000080000acc <memcpy8_loop>:
+    80000acc:	0002be03          	ld	t3,0(t0)
+    80000ad0:	01c33023          	sd	t3,0(t1)
+    80000ad4:	00828293          	addi	t0,t0,8
+    80000ad8:	00830313          	addi	t1,t1,8
+    80000adc:	00138393          	addi	t2,t2,1
+    80000ae0:	fec3c6e3          	blt	t2,a2,80000acc <memcpy8_loop>
+    80000ae4:	00008067          	ret
+
+0000000080000ae8 <memcmp8>:
+    80000ae8:	00050293          	mv	t0,a0
+    80000aec:	00058313          	mv	t1,a1
+    80000af0:	00000393          	li	t2,0
+
+0000000080000af4 <memcmp8_loop>:
+    80000af4:	0002be03          	ld	t3,0(t0)
+    80000af8:	00033e83          	ld	t4,0(t1)
+    80000afc:	01de1e63          	bne	t3,t4,80000b18 <memcmp8_ne>
+    80000b00:	00828293          	addi	t0,t0,8
+    80000b04:	00830313          	addi	t1,t1,8
+    80000b08:	00138393          	addi	t2,t2,1
+    80000b0c:	fec3c4e3          	blt	t2,a2,80000af4 <memcmp8_loop>
+    80000b10:	fff00513          	li	a0,-1
+    80000b14:	00008067          	ret
+
+0000000080000b18 <memcmp8_ne>:
+    80000b18:	00038513          	mv	a0,t2
+    80000b1c:	00008067          	ret
+
+0000000080000b20 <cleanup_epilogs>:
+    80000b20:	0380006f          	j	80000b58 <exit_cleanup>
+
+0000000080000b24 <abort_tests>:
+    80000b24:	1f813483          	ld	s1,504(sp)
+    80000b28:	20013303          	ld	t1,512(sp)
+    80000b2c:	00930333          	add	t1,t1,s1
+    80000b30:	00000337          	lui	t1,0x0
+    80000b34:	00030313          	mv	t1,t1
+    80000b38:	00b31313          	slli	t1,t1,0xb
+    80000b3c:	5d630313          	addi	t1,t1,1494 # 5d6 <pos+0x596>
+    80000b40:	00b31313          	slli	t1,t1,0xb
+    80000b44:	43630313          	addi	t1,t1,1078
+    80000b48:	00a31313          	slli	t1,t1,0xa
+    80000b4c:	2d030313          	addi	t1,t1,720
+    80000b50:	fe64be23          	sd	t1,-4(s1)
+    80000b54:	0040006f          	j	80000b58 <exit_cleanup>
+
+0000000080000b58 <exit_cleanup>:
+    80000b58:	0001                	.insn	2, 0x0001
+    80000b5a:	00000013          	nop
+    80000b5e:	00000013          	nop
+
+Disassembly of section .tohost:
+
+0000000080001000 <tohost>:
+	...
+
+0000000080001100 <fromhost>:
+	...
+
+Disassembly of section .data:
+
+0000000080002000 <rvtest_data_begin>:
+    80002000:	deadbeef          	jal	t4,7ffdd5ea <absimmsh+0x7450c83d>
+    80002004:	deadbeef          	jal	t4,7ffdd5ee <absimmsh+0x7450c841>
+    80002008:	deadbeef          	jal	t4,7ffdd5f2 <absimmsh+0x7450c845>
+    8000200c:	deadbeef          	jal	t4,7ffdd5f6 <absimmsh+0x7450c849>
+    80002010:	deadbeef          	jal	t4,7ffdd5fa <absimmsh+0x7450c84d>
+    80002014:	deadbeef          	jal	t4,7ffdd5fe <absimmsh+0x7450c851>
+    80002018:	deadbeef          	jal	t4,7ffdd602 <absimmsh+0x7450c855>
+    8000201c:	deadbeef          	jal	t4,7ffdd606 <absimmsh+0x7450c859>
+    80002020:	deadbeef          	jal	t4,7ffdd60a <absimmsh+0x7450c85d>
+    80002024:	deadbeef          	jal	t4,7ffdd60e <absimmsh+0x7450c861>
+    80002028:	deadbeef          	jal	t4,7ffdd612 <absimmsh+0x7450c865>
+    8000202c:	deadbeef          	jal	t4,7ffdd616 <absimmsh+0x7450c869>
+    80002030:	deadbeef          	jal	t4,7ffdd61a <absimmsh+0x7450c86d>
+    80002034:	deadbeef          	jal	t4,7ffdd61e <absimmsh+0x7450c871>
+    80002038:	deadbeef          	jal	t4,7ffdd622 <absimmsh+0x7450c875>
+    8000203c:	deadbeef          	jal	t4,7ffdd626 <absimmsh+0x7450c879>
+    80002040:	deadbeef          	jal	t4,7ffdd62a <absimmsh+0x7450c87d>
+    80002044:	deadbeef          	jal	t4,7ffdd62e <absimmsh+0x7450c881>
+    80002048:	deadbeef          	jal	t4,7ffdd632 <absimmsh+0x7450c885>
+    8000204c:	deadbeef          	jal	t4,7ffdd636 <absimmsh+0x7450c889>
+    80002050:	deadbeef          	jal	t4,7ffdd63a <absimmsh+0x7450c88d>
+    80002054:	deadbeef          	jal	t4,7ffdd63e <absimmsh+0x7450c891>
+    80002058:	deadbeef          	jal	t4,7ffdd642 <absimmsh+0x7450c895>
+    8000205c:	deadbeef          	jal	t4,7ffdd646 <absimmsh+0x7450c899>
+    80002060:	deadbeef          	jal	t4,7ffdd64a <absimmsh+0x7450c89d>
+    80002064:	deadbeef          	jal	t4,7ffdd64e <absimmsh+0x7450c8a1>
+    80002068:	deadbeef          	jal	t4,7ffdd652 <absimmsh+0x7450c8a5>
+    8000206c:	deadbeef          	jal	t4,7ffdd656 <absimmsh+0x7450c8a9>
+    80002070:	deadbeef          	jal	t4,7ffdd65a <absimmsh+0x7450c8ad>
+    80002074:	deadbeef          	jal	t4,7ffdd65e <absimmsh+0x7450c8b1>
+    80002078:	deadbeef          	jal	t4,7ffdd662 <absimmsh+0x7450c8b5>
+    8000207c:	deadbeef          	jal	t4,7ffdd666 <absimmsh+0x7450c8b9>
+    80002080:	deadbeef          	jal	t4,7ffdd66a <absimmsh+0x7450c8bd>
+    80002084:	deadbeef          	jal	t4,7ffdd66e <absimmsh+0x7450c8c1>
+    80002088:	deadbeef          	jal	t4,7ffdd672 <absimmsh+0x7450c8c5>
+    8000208c:	deadbeef          	jal	t4,7ffdd676 <absimmsh+0x7450c8c9>
+    80002090:	deadbeef          	jal	t4,7ffdd67a <absimmsh+0x7450c8cd>
+    80002094:	deadbeef          	jal	t4,7ffdd67e <absimmsh+0x7450c8d1>
+    80002098:	deadbeef          	jal	t4,7ffdd682 <absimmsh+0x7450c8d5>
+    8000209c:	deadbeef          	jal	t4,7ffdd686 <absimmsh+0x7450c8d9>
+    800020a0:	deadbeef          	jal	t4,7ffdd68a <absimmsh+0x7450c8dd>
+    800020a4:	deadbeef          	jal	t4,7ffdd68e <absimmsh+0x7450c8e1>
+    800020a8:	deadbeef          	jal	t4,7ffdd692 <absimmsh+0x7450c8e5>
+    800020ac:	deadbeef          	jal	t4,7ffdd696 <absimmsh+0x7450c8e9>
+    800020b0:	deadbeef          	jal	t4,7ffdd69a <absimmsh+0x7450c8ed>
+    800020b4:	deadbeef          	jal	t4,7ffdd69e <absimmsh+0x7450c8f1>
+    800020b8:	deadbeef          	jal	t4,7ffdd6a2 <absimmsh+0x7450c8f5>
+    800020bc:	deadbeef          	jal	t4,7ffdd6a6 <absimmsh+0x7450c8f9>
+    800020c0:	deadbeef          	jal	t4,7ffdd6aa <absimmsh+0x7450c8fd>
+    800020c4:	deadbeef          	jal	t4,7ffdd6ae <absimmsh+0x7450c901>
+    800020c8:	deadbeef          	jal	t4,7ffdd6b2 <absimmsh+0x7450c905>
+    800020cc:	deadbeef          	jal	t4,7ffdd6b6 <absimmsh+0x7450c909>
+    800020d0:	deadbeef          	jal	t4,7ffdd6ba <absimmsh+0x7450c90d>
+    800020d4:	deadbeef          	jal	t4,7ffdd6be <absimmsh+0x7450c911>
+    800020d8:	deadbeef          	jal	t4,7ffdd6c2 <absimmsh+0x7450c915>
+    800020dc:	deadbeef          	jal	t4,7ffdd6c6 <absimmsh+0x7450c919>
+    800020e0:	deadbeef          	jal	t4,7ffdd6ca <absimmsh+0x7450c91d>
+    800020e4:	deadbeef          	jal	t4,7ffdd6ce <absimmsh+0x7450c921>
+    800020e8:	deadbeef          	jal	t4,7ffdd6d2 <absimmsh+0x7450c925>
+    800020ec:	deadbeef          	jal	t4,7ffdd6d6 <absimmsh+0x7450c929>
+    800020f0:	deadbeef          	jal	t4,7ffdd6da <absimmsh+0x7450c92d>
+    800020f4:	deadbeef          	jal	t4,7ffdd6de <absimmsh+0x7450c931>
+    800020f8:	deadbeef          	jal	t4,7ffdd6e2 <absimmsh+0x7450c935>
+    800020fc:	deadbeef          	jal	t4,7ffdd6e6 <absimmsh+0x7450c939>
+    80002100:	deadbeef          	jal	t4,7ffdd6ea <absimmsh+0x7450c93d>
+    80002104:	deadbeef          	jal	t4,7ffdd6ee <absimmsh+0x7450c941>
+    80002108:	deadbeef          	jal	t4,7ffdd6f2 <absimmsh+0x7450c945>
+    8000210c:	deadbeef          	jal	t4,7ffdd6f6 <absimmsh+0x7450c949>
+    80002110:	deadbeef          	jal	t4,7ffdd6fa <absimmsh+0x7450c94d>
+    80002114:	deadbeef          	jal	t4,7ffdd6fe <absimmsh+0x7450c951>
+    80002118:	deadbeef          	jal	t4,7ffdd702 <absimmsh+0x7450c955>
+    8000211c:	deadbeef          	jal	t4,7ffdd706 <absimmsh+0x7450c959>
+    80002120:	deadbeef          	jal	t4,7ffdd70a <absimmsh+0x7450c95d>
+    80002124:	deadbeef          	jal	t4,7ffdd70e <absimmsh+0x7450c961>
+    80002128:	deadbeef          	jal	t4,7ffdd712 <absimmsh+0x7450c965>
+    8000212c:	deadbeef          	jal	t4,7ffdd716 <absimmsh+0x7450c969>
+    80002130:	deadbeef          	jal	t4,7ffdd71a <absimmsh+0x7450c96d>
+    80002134:	deadbeef          	jal	t4,7ffdd71e <absimmsh+0x7450c971>
+    80002138:	deadbeef          	jal	t4,7ffdd722 <absimmsh+0x7450c975>
+    8000213c:	deadbeef          	jal	t4,7ffdd726 <absimmsh+0x7450c979>
+    80002140:	deadbeef          	jal	t4,7ffdd72a <absimmsh+0x7450c97d>
+    80002144:	deadbeef          	jal	t4,7ffdd72e <absimmsh+0x7450c981>
+    80002148:	deadbeef          	jal	t4,7ffdd732 <absimmsh+0x7450c985>
+    8000214c:	deadbeef          	jal	t4,7ffdd736 <absimmsh+0x7450c989>
+    80002150:	deadbeef          	jal	t4,7ffdd73a <absimmsh+0x7450c98d>
+    80002154:	deadbeef          	jal	t4,7ffdd73e <absimmsh+0x7450c991>
+    80002158:	deadbeef          	jal	t4,7ffdd742 <absimmsh+0x7450c995>
+    8000215c:	deadbeef          	jal	t4,7ffdd746 <absimmsh+0x7450c999>
+    80002160:	deadbeef          	jal	t4,7ffdd74a <absimmsh+0x7450c99d>
+    80002164:	deadbeef          	jal	t4,7ffdd74e <absimmsh+0x7450c9a1>
+    80002168:	deadbeef          	jal	t4,7ffdd752 <absimmsh+0x7450c9a5>
+    8000216c:	deadbeef          	jal	t4,7ffdd756 <absimmsh+0x7450c9a9>
+    80002170:	deadbeef          	jal	t4,7ffdd75a <absimmsh+0x7450c9ad>
+    80002174:	deadbeef          	jal	t4,7ffdd75e <absimmsh+0x7450c9b1>
+    80002178:	deadbeef          	jal	t4,7ffdd762 <absimmsh+0x7450c9b5>
+    8000217c:	deadbeef          	jal	t4,7ffdd766 <absimmsh+0x7450c9b9>
+    80002180:	deadbeef          	jal	t4,7ffdd76a <absimmsh+0x7450c9bd>
+    80002184:	deadbeef          	jal	t4,7ffdd76e <absimmsh+0x7450c9c1>
+    80002188:	deadbeef          	jal	t4,7ffdd772 <absimmsh+0x7450c9c5>
+    8000218c:	deadbeef          	jal	t4,7ffdd776 <absimmsh+0x7450c9c9>
+    80002190:	deadbeef          	jal	t4,7ffdd77a <absimmsh+0x7450c9cd>
+    80002194:	deadbeef          	jal	t4,7ffdd77e <absimmsh+0x7450c9d1>
+    80002198:	deadbeef          	jal	t4,7ffdd782 <absimmsh+0x7450c9d5>
+    8000219c:	deadbeef          	jal	t4,7ffdd786 <absimmsh+0x7450c9d9>
+    800021a0:	deadbeef          	jal	t4,7ffdd78a <absimmsh+0x7450c9dd>
+    800021a4:	deadbeef          	jal	t4,7ffdd78e <absimmsh+0x7450c9e1>
+    800021a8:	deadbeef          	jal	t4,7ffdd792 <absimmsh+0x7450c9e5>
+    800021ac:	deadbeef          	jal	t4,7ffdd796 <absimmsh+0x7450c9e9>
+    800021b0:	deadbeef          	jal	t4,7ffdd79a <absimmsh+0x7450c9ed>
+    800021b4:	deadbeef          	jal	t4,7ffdd79e <absimmsh+0x7450c9f1>
+    800021b8:	deadbeef          	jal	t4,7ffdd7a2 <absimmsh+0x7450c9f5>
+    800021bc:	deadbeef          	jal	t4,7ffdd7a6 <absimmsh+0x7450c9f9>
+    800021c0:	deadbeef          	jal	t4,7ffdd7aa <absimmsh+0x7450c9fd>
+    800021c4:	deadbeef          	jal	t4,7ffdd7ae <absimmsh+0x7450ca01>
+    800021c8:	deadbeef          	jal	t4,7ffdd7b2 <absimmsh+0x7450ca05>
+    800021cc:	deadbeef          	jal	t4,7ffdd7b6 <absimmsh+0x7450ca09>
+    800021d0:	deadbeef          	jal	t4,7ffdd7ba <absimmsh+0x7450ca0d>
+    800021d4:	deadbeef          	jal	t4,7ffdd7be <absimmsh+0x7450ca11>
+    800021d8:	deadbeef          	jal	t4,7ffdd7c2 <absimmsh+0x7450ca15>
+    800021dc:	deadbeef          	jal	t4,7ffdd7c6 <absimmsh+0x7450ca19>
+    800021e0:	deadbeef          	jal	t4,7ffdd7ca <absimmsh+0x7450ca1d>
+    800021e4:	deadbeef          	jal	t4,7ffdd7ce <absimmsh+0x7450ca21>
+    800021e8:	deadbeef          	jal	t4,7ffdd7d2 <absimmsh+0x7450ca25>
+    800021ec:	deadbeef          	jal	t4,7ffdd7d6 <absimmsh+0x7450ca29>
+    800021f0:	deadbeef          	jal	t4,7ffdd7da <absimmsh+0x7450ca2d>
+    800021f4:	deadbeef          	jal	t4,7ffdd7de <absimmsh+0x7450ca31>
+    800021f8:	deadbeef          	jal	t4,7ffdd7e2 <absimmsh+0x7450ca35>
+    800021fc:	deadbeef          	jal	t4,7ffdd7e6 <absimmsh+0x7450ca39>
+
+0000000080002200 <SourceData>:
+    80002200:	0000                	.insn	2, 0x0000
+    80002202:	0000                	.insn	2, 0x0000
+    80002204:	0001                	.insn	2, 0x0001
+    80002206:	0000                	.insn	2, 0x0000
+    80002208:	0002                	.insn	2, 0x0002
+    8000220a:	0000                	.insn	2, 0x0000
+    8000220c:	00000003          	lb	zero,0(zero) # 0 <cryh>
+    80002210:	0004                	.insn	2, 0x0004
+    80002212:	0000                	.insn	2, 0x0000
+    80002214:	0005                	.insn	2, 0x0005
+    80002216:	0000                	.insn	2, 0x0000
+    80002218:	0006                	.insn	2, 0x0006
+    8000221a:	0000                	.insn	2, 0x0000
+    8000221c:	00000007          	.insn	4, 0x0007
+    80002220:	0008                	.insn	2, 0x0008
+    80002222:	0000                	.insn	2, 0x0000
+    80002224:	0009                	.insn	2, 0x0009
+    80002226:	0000                	.insn	2, 0x0000
+    80002228:	000a                	.insn	2, 0x000a
+    8000222a:	0000                	.insn	2, 0x0000
+    8000222c:	0000000b          	.insn	4, 0x000b
+    80002230:	000c                	.insn	2, 0x000c
+    80002232:	0000                	.insn	2, 0x0000
+    80002234:	000d                	.insn	2, 0x000d
+    80002236:	0000                	.insn	2, 0x0000
+    80002238:	000e                	.insn	2, 0x000e
+    8000223a:	0000                	.insn	2, 0x0000
+    8000223c:	0000000f          	fence	unknown,unknown
+    80002240:	0010                	.insn	2, 0x0010
+    80002242:	0000                	.insn	2, 0x0000
+    80002244:	0011                	.insn	2, 0x0011
+    80002246:	0000                	.insn	2, 0x0000
+    80002248:	0012                	.insn	2, 0x0012
+    8000224a:	0000                	.insn	2, 0x0000
+    8000224c:	00000013          	nop
+    80002250:	0014                	.insn	2, 0x0014
+    80002252:	0000                	.insn	2, 0x0000
+    80002254:	0015                	.insn	2, 0x0015
+    80002256:	0000                	.insn	2, 0x0000
+    80002258:	0016                	.insn	2, 0x0016
+    8000225a:	0000                	.insn	2, 0x0000
+    8000225c:	00000017          	auipc	zero,0x0
+    80002260:	0018                	.insn	2, 0x0018
+    80002262:	0000                	.insn	2, 0x0000
+    80002264:	0019                	.insn	2, 0x0019
+    80002266:	0000                	.insn	2, 0x0000
+    80002268:	001a                	.insn	2, 0x001a
+    8000226a:	0000                	.insn	2, 0x0000
+    8000226c:	0000001b          	sext.w	zero,zero
+    80002270:	001c                	.insn	2, 0x001c
+    80002272:	0000                	.insn	2, 0x0000
+    80002274:	001d                	.insn	2, 0x001d
+    80002276:	0000                	.insn	2, 0x0000
+    80002278:	001e                	.insn	2, 0x001e
+    8000227a:	0000                	.insn	2, 0x0000
+    8000227c:	001f 0000 0020      	.insn	6, 0x00200000001f
+    80002282:	0000                	.insn	2, 0x0000
+    80002284:	0021                	.insn	2, 0x0021
+    80002286:	0000                	.insn	2, 0x0000
+    80002288:	0022                	.insn	2, 0x0022
+    8000228a:	0000                	.insn	2, 0x0000
+    8000228c:	00000023          	sb	zero,0(zero) # 0 <cryh>
+    80002290:	0024                	.insn	2, 0x0024
+    80002292:	0000                	.insn	2, 0x0000
+    80002294:	0025                	.insn	2, 0x0025
+    80002296:	0000                	.insn	2, 0x0000
+    80002298:	0026                	.insn	2, 0x0026
+    8000229a:	0000                	.insn	2, 0x0000
+    8000229c:	00000027          	.insn	4, 0x0027
+    800022a0:	0028                	.insn	2, 0x0028
+    800022a2:	0000                	.insn	2, 0x0000
+    800022a4:	0029                	.insn	2, 0x0029
+    800022a6:	0000                	.insn	2, 0x0000
+    800022a8:	002a                	.insn	2, 0x002a
+    800022aa:	0000                	.insn	2, 0x0000
+    800022ac:	0000002b          	.insn	4, 0x002b
+    800022b0:	002c                	.insn	2, 0x002c
+    800022b2:	0000                	.insn	2, 0x0000
+    800022b4:	002d                	.insn	2, 0x002d
+    800022b6:	0000                	.insn	2, 0x0000
+    800022b8:	002e                	.insn	2, 0x002e
+    800022ba:	0000                	.insn	2, 0x0000
+    800022bc:	0000002f          	.insn	4, 0x002f
+    800022c0:	0030                	.insn	2, 0x0030
+    800022c2:	0000                	.insn	2, 0x0000
+    800022c4:	0031                	.insn	2, 0x0031
+    800022c6:	0000                	.insn	2, 0x0000
+    800022c8:	0032                	.insn	2, 0x0032
+    800022ca:	0000                	.insn	2, 0x0000
+    800022cc:	00000033          	add	zero,zero,zero
+    800022d0:	0034                	.insn	2, 0x0034
+    800022d2:	0000                	.insn	2, 0x0000
+    800022d4:	0035                	.insn	2, 0x0035
+    800022d6:	0000                	.insn	2, 0x0000
+    800022d8:	0036                	.insn	2, 0x0036
+    800022da:	0000                	.insn	2, 0x0000
+    800022dc:	00000037          	lui	zero,0x0
+    800022e0:	0038                	.insn	2, 0x0038
+    800022e2:	0000                	.insn	2, 0x0000
+    800022e4:	0039                	.insn	2, 0x0039
+    800022e6:	0000                	.insn	2, 0x0000
+    800022e8:	003a                	.insn	2, 0x003a
+    800022ea:	0000                	.insn	2, 0x0000
+    800022ec:	0000003b          	addw	zero,zero,zero
+    800022f0:	003c                	.insn	2, 0x003c
+    800022f2:	0000                	.insn	2, 0x0000
+    800022f4:	003d                	.insn	2, 0x003d
+    800022f6:	0000                	.insn	2, 0x0000
+    800022f8:	003e                	.insn	2, 0x003e
+    800022fa:	0000                	.insn	2, 0x0000
+    800022fc:	0000003f 00000040 	.insn	8, 0x00400000003f
+    80002304:	0041                	.insn	2, 0x0041
+    80002306:	0000                	.insn	2, 0x0000
+    80002308:	0042                	.insn	2, 0x0042
+    8000230a:	0000                	.insn	2, 0x0000
+    8000230c:	00000043          	.insn	4, 0x0043
+    80002310:	0044                	.insn	2, 0x0044
+    80002312:	0000                	.insn	2, 0x0000
+    80002314:	0045                	.insn	2, 0x0045
+    80002316:	0000                	.insn	2, 0x0000
+    80002318:	0046                	.insn	2, 0x0046
+    8000231a:	0000                	.insn	2, 0x0000
+    8000231c:	00000047          	.insn	4, 0x0047
+    80002320:	0048                	.insn	2, 0x0048
+    80002322:	0000                	.insn	2, 0x0000
+    80002324:	0049                	.insn	2, 0x0049
+    80002326:	0000                	.insn	2, 0x0000
+    80002328:	004a                	.insn	2, 0x004a
+    8000232a:	0000                	.insn	2, 0x0000
+    8000232c:	0000004b          	.insn	4, 0x004b
+    80002330:	004c                	.insn	2, 0x004c
+    80002332:	0000                	.insn	2, 0x0000
+    80002334:	004d                	.insn	2, 0x004d
+    80002336:	0000                	.insn	2, 0x0000
+    80002338:	004e                	.insn	2, 0x004e
+    8000233a:	0000                	.insn	2, 0x0000
+    8000233c:	0000004f          	.insn	4, 0x004f
+    80002340:	0050                	.insn	2, 0x0050
+    80002342:	0000                	.insn	2, 0x0000
+    80002344:	0051                	.insn	2, 0x0051
+    80002346:	0000                	.insn	2, 0x0000
+    80002348:	0052                	.insn	2, 0x0052
+    8000234a:	0000                	.insn	2, 0x0000
+    8000234c:	00000053          	.insn	4, 0x0053
+    80002350:	0054                	.insn	2, 0x0054
+    80002352:	0000                	.insn	2, 0x0000
+    80002354:	0055                	.insn	2, 0x0055
+    80002356:	0000                	.insn	2, 0x0000
+    80002358:	0056                	.insn	2, 0x0056
+    8000235a:	0000                	.insn	2, 0x0000
+    8000235c:	00000057          	.insn	4, 0x0057
+    80002360:	0058                	.insn	2, 0x0058
+    80002362:	0000                	.insn	2, 0x0000
+    80002364:	0059                	.insn	2, 0x0059
+    80002366:	0000                	.insn	2, 0x0000
+    80002368:	005a                	.insn	2, 0x005a
+    8000236a:	0000                	.insn	2, 0x0000
+    8000236c:	0000005b          	.insn	4, 0x005b
+    80002370:	005c                	.insn	2, 0x005c
+    80002372:	0000                	.insn	2, 0x0000
+    80002374:	005d                	.insn	2, 0x005d
+    80002376:	0000                	.insn	2, 0x0000
+    80002378:	005e                	.insn	2, 0x005e
+    8000237a:	0000                	.insn	2, 0x0000
+    8000237c:	005f 0000 0060      	.insn	6, 0x00600000005f
+    80002382:	0000                	.insn	2, 0x0000
+    80002384:	0061                	.insn	2, 0x0061
+    80002386:	0000                	.insn	2, 0x0000
+    80002388:	0062                	.insn	2, 0x0062
+    8000238a:	0000                	.insn	2, 0x0000
+    8000238c:	00000063          	beqz	zero,8000238c <SourceData+0x18c>
+    80002390:	0064                	.insn	2, 0x0064
+    80002392:	0000                	.insn	2, 0x0000
+    80002394:	0065                	.insn	2, 0x0065
+    80002396:	0000                	.insn	2, 0x0000
+    80002398:	0066                	.insn	2, 0x0066
+    8000239a:	0000                	.insn	2, 0x0000
+    8000239c:	00000067          	jr	zero # 0 <cryh>
+    800023a0:	0068                	.insn	2, 0x0068
+    800023a2:	0000                	.insn	2, 0x0000
+    800023a4:	0069                	.insn	2, 0x0069
+    800023a6:	0000                	.insn	2, 0x0000
+    800023a8:	006a                	.insn	2, 0x006a
+    800023aa:	0000                	.insn	2, 0x0000
+    800023ac:	0000006b          	.insn	4, 0x006b
+    800023b0:	006c                	.insn	2, 0x006c
+    800023b2:	0000                	.insn	2, 0x0000
+    800023b4:	006d                	.insn	2, 0x006d
+    800023b6:	0000                	.insn	2, 0x0000
+    800023b8:	006e                	.insn	2, 0x006e
+    800023ba:	0000                	.insn	2, 0x0000
+    800023bc:	0000006f          	j	800023bc <SourceData+0x1bc>
+    800023c0:	0070                	.insn	2, 0x0070
+    800023c2:	0000                	.insn	2, 0x0000
+    800023c4:	0071                	.insn	2, 0x0071
+    800023c6:	0000                	.insn	2, 0x0000
+    800023c8:	0072                	.insn	2, 0x0072
+    800023ca:	0000                	.insn	2, 0x0000
+    800023cc:	00000073          	ecall
+    800023d0:	0074                	.insn	2, 0x0074
+    800023d2:	0000                	.insn	2, 0x0000
+    800023d4:	0075                	.insn	2, 0x0075
+    800023d6:	0000                	.insn	2, 0x0000
+    800023d8:	0076                	.insn	2, 0x0076
+    800023da:	0000                	.insn	2, 0x0000
+    800023dc:	00000077          	.insn	4, 0x0077
+    800023e0:	0078                	.insn	2, 0x0078
+    800023e2:	0000                	.insn	2, 0x0000
+    800023e4:	0079                	.insn	2, 0x0079
+    800023e6:	0000                	.insn	2, 0x0000
+    800023e8:	007a                	.insn	2, 0x007a
+    800023ea:	0000                	.insn	2, 0x0000
+    800023ec:	0000007b          	.insn	4, 0x007b
+    800023f0:	007c                	.insn	2, 0x007c
+    800023f2:	0000                	.insn	2, 0x0000
+    800023f4:	007d                	.insn	2, 0x007d
+    800023f6:	0000                	.insn	2, 0x0000
+    800023f8:	007e                	.insn	2, 0x007e
+    800023fa:	0000                	.insn	2, 0x0000
+    800023fc:	007f 0000   	.insn	10, 0xbeefdeadbeef0000007f
+    80002404:	 
+
+0000000080002400 <mtrap_sigptr>:
+    80002400:	deadbeef          	jal	t4,7ffdd9ea <absimmsh+0x7450cc3d>
+    80002404:	deadbeef          	jal	t4,7ffdd9ee <absimmsh+0x7450cc41>
+	...
+
+0000000080003000 <begin_regstate>:
+    80003000:	0080                	.insn	2, 0x0080
+	...
+
+0000000080003100 <end_regstate>:
+    80003100:	0004                	.insn	2, 0x0004
+	...
+
+0000000080003110 <begin_signature>:
+    80003110:	deadbeef          	jal	t4,7ffde6fa <absimmsh+0x7450d94d>
+    80003114:	deadbeef          	jal	t4,7ffde6fe <absimmsh+0x7450d951>
+    80003118:	deadbeef          	jal	t4,7ffde702 <absimmsh+0x7450d955>
+    8000311c:	deadbeef          	jal	t4,7ffde706 <absimmsh+0x7450d959>
+    80003120:	deadbeef          	jal	t4,7ffde70a <absimmsh+0x7450d95d>
+    80003124:	deadbeef          	jal	t4,7ffde70e <absimmsh+0x7450d961>
+    80003128:	deadbeef          	jal	t4,7ffde712 <absimmsh+0x7450d965>
+    8000312c:	deadbeef          	jal	t4,7ffde716 <absimmsh+0x7450d969>
+    80003130:	deadbeef          	jal	t4,7ffde71a <absimmsh+0x7450d96d>
+    80003134:	deadbeef          	jal	t4,7ffde71e <absimmsh+0x7450d971>
+    80003138:	deadbeef          	jal	t4,7ffde722 <absimmsh+0x7450d975>
+    8000313c:	deadbeef          	jal	t4,7ffde726 <absimmsh+0x7450d979>
+    80003140:	deadbeef          	jal	t4,7ffde72a <absimmsh+0x7450d97d>
+    80003144:	deadbeef          	jal	t4,7ffde72e <absimmsh+0x7450d981>
+    80003148:	deadbeef          	jal	t4,7ffde732 <absimmsh+0x7450d985>
+    8000314c:	deadbeef          	jal	t4,7ffde736 <absimmsh+0x7450d989>
+    80003150:	deadbeef          	jal	t4,7ffde73a <absimmsh+0x7450d98d>
+    80003154:	deadbeef          	jal	t4,7ffde73e <absimmsh+0x7450d991>
+    80003158:	deadbeef          	jal	t4,7ffde742 <absimmsh+0x7450d995>
+    8000315c:	deadbeef          	jal	t4,7ffde746 <absimmsh+0x7450d999>
+    80003160:	deadbeef          	jal	t4,7ffde74a <absimmsh+0x7450d99d>
+    80003164:	deadbeef          	jal	t4,7ffde74e <absimmsh+0x7450d9a1>
+    80003168:	deadbeef          	jal	t4,7ffde752 <absimmsh+0x7450d9a5>
+    8000316c:	deadbeef          	jal	t4,7ffde756 <absimmsh+0x7450d9a9>
+    80003170:	deadbeef          	jal	t4,7ffde75a <absimmsh+0x7450d9ad>
+    80003174:	deadbeef          	jal	t4,7ffde75e <absimmsh+0x7450d9b1>
+    80003178:	deadbeef          	jal	t4,7ffde762 <absimmsh+0x7450d9b5>
+    8000317c:	deadbeef          	jal	t4,7ffde766 <absimmsh+0x7450d9b9>
+
+0000000080003180 <Destination1>:
+    80003180:	deadbeef          	jal	t4,7ffde76a <absimmsh+0x7450d9bd>
+    80003184:	deadbeef          	jal	t4,7ffde76e <absimmsh+0x7450d9c1>
+    80003188:	deadbeef          	jal	t4,7ffde772 <absimmsh+0x7450d9c5>
+    8000318c:	deadbeef          	jal	t4,7ffde776 <absimmsh+0x7450d9c9>
+    80003190:	deadbeef          	jal	t4,7ffde77a <absimmsh+0x7450d9cd>
+    80003194:	deadbeef          	jal	t4,7ffde77e <absimmsh+0x7450d9d1>
+    80003198:	deadbeef          	jal	t4,7ffde782 <absimmsh+0x7450d9d5>
+    8000319c:	deadbeef          	jal	t4,7ffde786 <absimmsh+0x7450d9d9>
+    800031a0:	deadbeef          	jal	t4,7ffde78a <absimmsh+0x7450d9dd>
+    800031a4:	deadbeef          	jal	t4,7ffde78e <absimmsh+0x7450d9e1>
+    800031a8:	deadbeef          	jal	t4,7ffde792 <absimmsh+0x7450d9e5>
+    800031ac:	deadbeef          	jal	t4,7ffde796 <absimmsh+0x7450d9e9>
+    800031b0:	deadbeef          	jal	t4,7ffde79a <absimmsh+0x7450d9ed>
+    800031b4:	deadbeef          	jal	t4,7ffde79e <absimmsh+0x7450d9f1>
+    800031b8:	deadbeef          	jal	t4,7ffde7a2 <absimmsh+0x7450d9f5>
+    800031bc:	deadbeef          	jal	t4,7ffde7a6 <absimmsh+0x7450d9f9>
+    800031c0:	deadbeef          	jal	t4,7ffde7aa <absimmsh+0x7450d9fd>
+    800031c4:	deadbeef          	jal	t4,7ffde7ae <absimmsh+0x7450da01>
+    800031c8:	deadbeef          	jal	t4,7ffde7b2 <absimmsh+0x7450da05>
+    800031cc:	deadbeef          	jal	t4,7ffde7b6 <absimmsh+0x7450da09>
+    800031d0:	deadbeef          	jal	t4,7ffde7ba <absimmsh+0x7450da0d>
+    800031d4:	deadbeef          	jal	t4,7ffde7be <absimmsh+0x7450da11>
+    800031d8:	deadbeef          	jal	t4,7ffde7c2 <absimmsh+0x7450da15>
+    800031dc:	deadbeef          	jal	t4,7ffde7c6 <absimmsh+0x7450da19>
+    800031e0:	deadbeef          	jal	t4,7ffde7ca <absimmsh+0x7450da1d>
+    800031e4:	deadbeef          	jal	t4,7ffde7ce <absimmsh+0x7450da21>
+    800031e8:	deadbeef          	jal	t4,7ffde7d2 <absimmsh+0x7450da25>
+    800031ec:	deadbeef          	jal	t4,7ffde7d6 <absimmsh+0x7450da29>
+    800031f0:	deadbeef          	jal	t4,7ffde7da <absimmsh+0x7450da2d>
+    800031f4:	deadbeef          	jal	t4,7ffde7de <absimmsh+0x7450da31>
+    800031f8:	deadbeef          	jal	t4,7ffde7e2 <absimmsh+0x7450da35>
+    800031fc:	deadbeef          	jal	t4,7ffde7e6 <absimmsh+0x7450da39>
+    80003200:	deadbeef          	jal	t4,7ffde7ea <absimmsh+0x7450da3d>
+    80003204:	deadbeef          	jal	t4,7ffde7ee <absimmsh+0x7450da41>
+    80003208:	deadbeef          	jal	t4,7ffde7f2 <absimmsh+0x7450da45>
+    8000320c:	deadbeef          	jal	t4,7ffde7f6 <absimmsh+0x7450da49>
+    80003210:	deadbeef          	jal	t4,7ffde7fa <absimmsh+0x7450da4d>
+    80003214:	deadbeef          	jal	t4,7ffde7fe <absimmsh+0x7450da51>
+    80003218:	deadbeef          	jal	t4,7ffde802 <absimmsh+0x7450da55>
+    8000321c:	deadbeef          	jal	t4,7ffde806 <absimmsh+0x7450da59>
+    80003220:	deadbeef          	jal	t4,7ffde80a <absimmsh+0x7450da5d>
+    80003224:	deadbeef          	jal	t4,7ffde80e <absimmsh+0x7450da61>
+    80003228:	deadbeef          	jal	t4,7ffde812 <absimmsh+0x7450da65>
+    8000322c:	deadbeef          	jal	t4,7ffde816 <absimmsh+0x7450da69>
+    80003230:	deadbeef          	jal	t4,7ffde81a <absimmsh+0x7450da6d>
+    80003234:	deadbeef          	jal	t4,7ffde81e <absimmsh+0x7450da71>
+    80003238:	deadbeef          	jal	t4,7ffde822 <absimmsh+0x7450da75>
+    8000323c:	deadbeef          	jal	t4,7ffde826 <absimmsh+0x7450da79>
+    80003240:	deadbeef          	jal	t4,7ffde82a <absimmsh+0x7450da7d>
+    80003244:	deadbeef          	jal	t4,7ffde82e <absimmsh+0x7450da81>
+    80003248:	deadbeef          	jal	t4,7ffde832 <absimmsh+0x7450da85>
+    8000324c:	deadbeef          	jal	t4,7ffde836 <absimmsh+0x7450da89>
+    80003250:	deadbeef          	jal	t4,7ffde83a <absimmsh+0x7450da8d>
+    80003254:	deadbeef          	jal	t4,7ffde83e <absimmsh+0x7450da91>
+    80003258:	deadbeef          	jal	t4,7ffde842 <absimmsh+0x7450da95>
+    8000325c:	deadbeef          	jal	t4,7ffde846 <absimmsh+0x7450da99>
+    80003260:	deadbeef          	jal	t4,7ffde84a <absimmsh+0x7450da9d>
+    80003264:	deadbeef          	jal	t4,7ffde84e <absimmsh+0x7450daa1>
+    80003268:	deadbeef          	jal	t4,7ffde852 <absimmsh+0x7450daa5>
+    8000326c:	deadbeef          	jal	t4,7ffde856 <absimmsh+0x7450daa9>
+    80003270:	deadbeef          	jal	t4,7ffde85a <absimmsh+0x7450daad>
+    80003274:	deadbeef          	jal	t4,7ffde85e <absimmsh+0x7450dab1>
+    80003278:	deadbeef          	jal	t4,7ffde862 <absimmsh+0x7450dab5>
+    8000327c:	deadbeef          	jal	t4,7ffde866 <absimmsh+0x7450dab9>
+    80003280:	deadbeef          	jal	t4,7ffde86a <absimmsh+0x7450dabd>
+    80003284:	deadbeef          	jal	t4,7ffde86e <absimmsh+0x7450dac1>
+    80003288:	deadbeef          	jal	t4,7ffde872 <absimmsh+0x7450dac5>
+    8000328c:	deadbeef          	jal	t4,7ffde876 <absimmsh+0x7450dac9>
+    80003290:	deadbeef          	jal	t4,7ffde87a <absimmsh+0x7450dacd>
+    80003294:	deadbeef          	jal	t4,7ffde87e <absimmsh+0x7450dad1>
+    80003298:	deadbeef          	jal	t4,7ffde882 <absimmsh+0x7450dad5>
+    8000329c:	deadbeef          	jal	t4,7ffde886 <absimmsh+0x7450dad9>
+    800032a0:	deadbeef          	jal	t4,7ffde88a <absimmsh+0x7450dadd>
+    800032a4:	deadbeef          	jal	t4,7ffde88e <absimmsh+0x7450dae1>
+    800032a8:	deadbeef          	jal	t4,7ffde892 <absimmsh+0x7450dae5>
+    800032ac:	deadbeef          	jal	t4,7ffde896 <absimmsh+0x7450dae9>
+    800032b0:	deadbeef          	jal	t4,7ffde89a <absimmsh+0x7450daed>
+    800032b4:	deadbeef          	jal	t4,7ffde89e <absimmsh+0x7450daf1>
+    800032b8:	deadbeef          	jal	t4,7ffde8a2 <absimmsh+0x7450daf5>
+    800032bc:	deadbeef          	jal	t4,7ffde8a6 <absimmsh+0x7450daf9>
+    800032c0:	deadbeef          	jal	t4,7ffde8aa <absimmsh+0x7450dafd>
+    800032c4:	deadbeef          	jal	t4,7ffde8ae <absimmsh+0x7450db01>
+    800032c8:	deadbeef          	jal	t4,7ffde8b2 <absimmsh+0x7450db05>
+    800032cc:	deadbeef          	jal	t4,7ffde8b6 <absimmsh+0x7450db09>
+    800032d0:	deadbeef          	jal	t4,7ffde8ba <absimmsh+0x7450db0d>
+    800032d4:	deadbeef          	jal	t4,7ffde8be <absimmsh+0x7450db11>
+    800032d8:	deadbeef          	jal	t4,7ffde8c2 <absimmsh+0x7450db15>
+    800032dc:	deadbeef          	jal	t4,7ffde8c6 <absimmsh+0x7450db19>
+    800032e0:	deadbeef          	jal	t4,7ffde8ca <absimmsh+0x7450db1d>
+    800032e4:	deadbeef          	jal	t4,7ffde8ce <absimmsh+0x7450db21>
+    800032e8:	deadbeef          	jal	t4,7ffde8d2 <absimmsh+0x7450db25>
+    800032ec:	deadbeef          	jal	t4,7ffde8d6 <absimmsh+0x7450db29>
+    800032f0:	deadbeef          	jal	t4,7ffde8da <absimmsh+0x7450db2d>
+    800032f4:	deadbeef          	jal	t4,7ffde8de <absimmsh+0x7450db31>
+    800032f8:	deadbeef          	jal	t4,7ffde8e2 <absimmsh+0x7450db35>
+    800032fc:	deadbeef          	jal	t4,7ffde8e6 <absimmsh+0x7450db39>
+    80003300:	deadbeef          	jal	t4,7ffde8ea <absimmsh+0x7450db3d>
+    80003304:	deadbeef          	jal	t4,7ffde8ee <absimmsh+0x7450db41>
+    80003308:	deadbeef          	jal	t4,7ffde8f2 <absimmsh+0x7450db45>
+    8000330c:	deadbeef          	jal	t4,7ffde8f6 <absimmsh+0x7450db49>
+    80003310:	deadbeef          	jal	t4,7ffde8fa <absimmsh+0x7450db4d>
+    80003314:	deadbeef          	jal	t4,7ffde8fe <absimmsh+0x7450db51>
+    80003318:	deadbeef          	jal	t4,7ffde902 <absimmsh+0x7450db55>
+    8000331c:	deadbeef          	jal	t4,7ffde906 <absimmsh+0x7450db59>
+    80003320:	deadbeef          	jal	t4,7ffde90a <absimmsh+0x7450db5d>
+    80003324:	deadbeef          	jal	t4,7ffde90e <absimmsh+0x7450db61>
+    80003328:	deadbeef          	jal	t4,7ffde912 <absimmsh+0x7450db65>
+    8000332c:	deadbeef          	jal	t4,7ffde916 <absimmsh+0x7450db69>
+    80003330:	deadbeef          	jal	t4,7ffde91a <absimmsh+0x7450db6d>
+    80003334:	deadbeef          	jal	t4,7ffde91e <absimmsh+0x7450db71>
+    80003338:	deadbeef          	jal	t4,7ffde922 <absimmsh+0x7450db75>
+    8000333c:	deadbeef          	jal	t4,7ffde926 <absimmsh+0x7450db79>
+    80003340:	deadbeef          	jal	t4,7ffde92a <absimmsh+0x7450db7d>
+    80003344:	deadbeef          	jal	t4,7ffde92e <absimmsh+0x7450db81>
+    80003348:	deadbeef          	jal	t4,7ffde932 <absimmsh+0x7450db85>
+    8000334c:	deadbeef          	jal	t4,7ffde936 <absimmsh+0x7450db89>
+    80003350:	deadbeef          	jal	t4,7ffde93a <absimmsh+0x7450db8d>
+    80003354:	deadbeef          	jal	t4,7ffde93e <absimmsh+0x7450db91>
+    80003358:	deadbeef          	jal	t4,7ffde942 <absimmsh+0x7450db95>
+    8000335c:	deadbeef          	jal	t4,7ffde946 <absimmsh+0x7450db99>
+    80003360:	deadbeef          	jal	t4,7ffde94a <absimmsh+0x7450db9d>
+    80003364:	deadbeef          	jal	t4,7ffde94e <absimmsh+0x7450dba1>
+    80003368:	deadbeef          	jal	t4,7ffde952 <absimmsh+0x7450dba5>
+    8000336c:	deadbeef          	jal	t4,7ffde956 <absimmsh+0x7450dba9>
+    80003370:	deadbeef          	jal	t4,7ffde95a <absimmsh+0x7450dbad>
+    80003374:	deadbeef          	jal	t4,7ffde95e <absimmsh+0x7450dbb1>
+    80003378:	deadbeef          	jal	t4,7ffde962 <absimmsh+0x7450dbb5>
+    8000337c:	deadbeef          	jal	t4,7ffde966 <absimmsh+0x7450dbb9>
+
+0000000080003380 <Destination2>:
+    80003380:	deadbeef          	jal	t4,7ffde96a <absimmsh+0x7450dbbd>
+    80003384:	deadbeef          	jal	t4,7ffde96e <absimmsh+0x7450dbc1>
+    80003388:	deadbeef          	jal	t4,7ffde972 <absimmsh+0x7450dbc5>
+    8000338c:	deadbeef          	jal	t4,7ffde976 <absimmsh+0x7450dbc9>
+    80003390:	deadbeef          	jal	t4,7ffde97a <absimmsh+0x7450dbcd>
+    80003394:	deadbeef          	jal	t4,7ffde97e <absimmsh+0x7450dbd1>
+    80003398:	deadbeef          	jal	t4,7ffde982 <absimmsh+0x7450dbd5>
+    8000339c:	deadbeef          	jal	t4,7ffde986 <absimmsh+0x7450dbd9>
+    800033a0:	deadbeef          	jal	t4,7ffde98a <absimmsh+0x7450dbdd>
+    800033a4:	deadbeef          	jal	t4,7ffde98e <absimmsh+0x7450dbe1>
+    800033a8:	deadbeef          	jal	t4,7ffde992 <absimmsh+0x7450dbe5>
+    800033ac:	deadbeef          	jal	t4,7ffde996 <absimmsh+0x7450dbe9>
+    800033b0:	deadbeef          	jal	t4,7ffde99a <absimmsh+0x7450dbed>
+    800033b4:	deadbeef          	jal	t4,7ffde99e <absimmsh+0x7450dbf1>
+    800033b8:	deadbeef          	jal	t4,7ffde9a2 <absimmsh+0x7450dbf5>
+    800033bc:	deadbeef          	jal	t4,7ffde9a6 <absimmsh+0x7450dbf9>
+    800033c0:	deadbeef          	jal	t4,7ffde9aa <absimmsh+0x7450dbfd>
+    800033c4:	deadbeef          	jal	t4,7ffde9ae <absimmsh+0x7450dc01>
+    800033c8:	deadbeef          	jal	t4,7ffde9b2 <absimmsh+0x7450dc05>
+    800033cc:	deadbeef          	jal	t4,7ffde9b6 <absimmsh+0x7450dc09>
+    800033d0:	deadbeef          	jal	t4,7ffde9ba <absimmsh+0x7450dc0d>
+    800033d4:	deadbeef          	jal	t4,7ffde9be <absimmsh+0x7450dc11>
+    800033d8:	deadbeef          	jal	t4,7ffde9c2 <absimmsh+0x7450dc15>
+    800033dc:	deadbeef          	jal	t4,7ffde9c6 <absimmsh+0x7450dc19>
+    800033e0:	deadbeef          	jal	t4,7ffde9ca <absimmsh+0x7450dc1d>
+    800033e4:	deadbeef          	jal	t4,7ffde9ce <absimmsh+0x7450dc21>
+    800033e8:	deadbeef          	jal	t4,7ffde9d2 <absimmsh+0x7450dc25>
+    800033ec:	deadbeef          	jal	t4,7ffde9d6 <absimmsh+0x7450dc29>
+    800033f0:	deadbeef          	jal	t4,7ffde9da <absimmsh+0x7450dc2d>
+    800033f4:	deadbeef          	jal	t4,7ffde9de <absimmsh+0x7450dc31>
+    800033f8:	deadbeef          	jal	t4,7ffde9e2 <absimmsh+0x7450dc35>
+    800033fc:	deadbeef          	jal	t4,7ffde9e6 <absimmsh+0x7450dc39>
+    80003400:	deadbeef          	jal	t4,7ffde9ea <absimmsh+0x7450dc3d>
+    80003404:	deadbeef          	jal	t4,7ffde9ee <absimmsh+0x7450dc41>
+    80003408:	deadbeef          	jal	t4,7ffde9f2 <absimmsh+0x7450dc45>
+    8000340c:	deadbeef          	jal	t4,7ffde9f6 <absimmsh+0x7450dc49>
+    80003410:	deadbeef          	jal	t4,7ffde9fa <absimmsh+0x7450dc4d>
+    80003414:	deadbeef          	jal	t4,7ffde9fe <absimmsh+0x7450dc51>
+    80003418:	deadbeef          	jal	t4,7ffdea02 <absimmsh+0x7450dc55>
+    8000341c:	deadbeef          	jal	t4,7ffdea06 <absimmsh+0x7450dc59>
+    80003420:	deadbeef          	jal	t4,7ffdea0a <absimmsh+0x7450dc5d>
+    80003424:	deadbeef          	jal	t4,7ffdea0e <absimmsh+0x7450dc61>
+    80003428:	deadbeef          	jal	t4,7ffdea12 <absimmsh+0x7450dc65>
+    8000342c:	deadbeef          	jal	t4,7ffdea16 <absimmsh+0x7450dc69>
+    80003430:	deadbeef          	jal	t4,7ffdea1a <absimmsh+0x7450dc6d>
+    80003434:	deadbeef          	jal	t4,7ffdea1e <absimmsh+0x7450dc71>
+    80003438:	deadbeef          	jal	t4,7ffdea22 <absimmsh+0x7450dc75>
+    8000343c:	deadbeef          	jal	t4,7ffdea26 <absimmsh+0x7450dc79>
+    80003440:	deadbeef          	jal	t4,7ffdea2a <absimmsh+0x7450dc7d>
+    80003444:	deadbeef          	jal	t4,7ffdea2e <absimmsh+0x7450dc81>
+    80003448:	deadbeef          	jal	t4,7ffdea32 <absimmsh+0x7450dc85>
+    8000344c:	deadbeef          	jal	t4,7ffdea36 <absimmsh+0x7450dc89>
+    80003450:	deadbeef          	jal	t4,7ffdea3a <absimmsh+0x7450dc8d>
+    80003454:	deadbeef          	jal	t4,7ffdea3e <absimmsh+0x7450dc91>
+    80003458:	deadbeef          	jal	t4,7ffdea42 <absimmsh+0x7450dc95>
+    8000345c:	deadbeef          	jal	t4,7ffdea46 <absimmsh+0x7450dc99>
+    80003460:	deadbeef          	jal	t4,7ffdea4a <absimmsh+0x7450dc9d>
+    80003464:	deadbeef          	jal	t4,7ffdea4e <absimmsh+0x7450dca1>
+    80003468:	deadbeef          	jal	t4,7ffdea52 <absimmsh+0x7450dca5>
+    8000346c:	deadbeef          	jal	t4,7ffdea56 <absimmsh+0x7450dca9>
+    80003470:	deadbeef          	jal	t4,7ffdea5a <absimmsh+0x7450dcad>
+    80003474:	deadbeef          	jal	t4,7ffdea5e <absimmsh+0x7450dcb1>
+    80003478:	deadbeef          	jal	t4,7ffdea62 <absimmsh+0x7450dcb5>
+    8000347c:	deadbeef          	jal	t4,7ffdea66 <absimmsh+0x7450dcb9>
+    80003480:	deadbeef          	jal	t4,7ffdea6a <absimmsh+0x7450dcbd>
+    80003484:	deadbeef          	jal	t4,7ffdea6e <absimmsh+0x7450dcc1>
+    80003488:	deadbeef          	jal	t4,7ffdea72 <absimmsh+0x7450dcc5>
+    8000348c:	deadbeef          	jal	t4,7ffdea76 <absimmsh+0x7450dcc9>
+    80003490:	deadbeef          	jal	t4,7ffdea7a <absimmsh+0x7450dccd>
+    80003494:	deadbeef          	jal	t4,7ffdea7e <absimmsh+0x7450dcd1>
+    80003498:	deadbeef          	jal	t4,7ffdea82 <absimmsh+0x7450dcd5>
+    8000349c:	deadbeef          	jal	t4,7ffdea86 <absimmsh+0x7450dcd9>
+    800034a0:	deadbeef          	jal	t4,7ffdea8a <absimmsh+0x7450dcdd>
+    800034a4:	deadbeef          	jal	t4,7ffdea8e <absimmsh+0x7450dce1>
+    800034a8:	deadbeef          	jal	t4,7ffdea92 <absimmsh+0x7450dce5>
+    800034ac:	deadbeef          	jal	t4,7ffdea96 <absimmsh+0x7450dce9>
+    800034b0:	deadbeef          	jal	t4,7ffdea9a <absimmsh+0x7450dced>
+    800034b4:	deadbeef          	jal	t4,7ffdea9e <absimmsh+0x7450dcf1>
+    800034b8:	deadbeef          	jal	t4,7ffdeaa2 <absimmsh+0x7450dcf5>
+    800034bc:	deadbeef          	jal	t4,7ffdeaa6 <absimmsh+0x7450dcf9>
+    800034c0:	deadbeef          	jal	t4,7ffdeaaa <absimmsh+0x7450dcfd>
+    800034c4:	deadbeef          	jal	t4,7ffdeaae <absimmsh+0x7450dd01>
+    800034c8:	deadbeef          	jal	t4,7ffdeab2 <absimmsh+0x7450dd05>
+    800034cc:	deadbeef          	jal	t4,7ffdeab6 <absimmsh+0x7450dd09>
+    800034d0:	deadbeef          	jal	t4,7ffdeaba <absimmsh+0x7450dd0d>
+    800034d4:	deadbeef          	jal	t4,7ffdeabe <absimmsh+0x7450dd11>
+    800034d8:	deadbeef          	jal	t4,7ffdeac2 <absimmsh+0x7450dd15>
+    800034dc:	deadbeef          	jal	t4,7ffdeac6 <absimmsh+0x7450dd19>
+    800034e0:	deadbeef          	jal	t4,7ffdeaca <absimmsh+0x7450dd1d>
+    800034e4:	deadbeef          	jal	t4,7ffdeace <absimmsh+0x7450dd21>
+    800034e8:	deadbeef          	jal	t4,7ffdead2 <absimmsh+0x7450dd25>
+    800034ec:	deadbeef          	jal	t4,7ffdead6 <absimmsh+0x7450dd29>
+    800034f0:	deadbeef          	jal	t4,7ffdeada <absimmsh+0x7450dd2d>
+    800034f4:	deadbeef          	jal	t4,7ffdeade <absimmsh+0x7450dd31>
+    800034f8:	deadbeef          	jal	t4,7ffdeae2 <absimmsh+0x7450dd35>
+    800034fc:	deadbeef          	jal	t4,7ffdeae6 <absimmsh+0x7450dd39>
+    80003500:	deadbeef          	jal	t4,7ffdeaea <absimmsh+0x7450dd3d>
+    80003504:	deadbeef          	jal	t4,7ffdeaee <absimmsh+0x7450dd41>
+    80003508:	deadbeef          	jal	t4,7ffdeaf2 <absimmsh+0x7450dd45>
+    8000350c:	deadbeef          	jal	t4,7ffdeaf6 <absimmsh+0x7450dd49>
+    80003510:	deadbeef          	jal	t4,7ffdeafa <absimmsh+0x7450dd4d>
+    80003514:	deadbeef          	jal	t4,7ffdeafe <absimmsh+0x7450dd51>
+    80003518:	deadbeef          	jal	t4,7ffdeb02 <absimmsh+0x7450dd55>
+    8000351c:	deadbeef          	jal	t4,7ffdeb06 <absimmsh+0x7450dd59>
+    80003520:	deadbeef          	jal	t4,7ffdeb0a <absimmsh+0x7450dd5d>
+    80003524:	deadbeef          	jal	t4,7ffdeb0e <absimmsh+0x7450dd61>
+    80003528:	deadbeef          	jal	t4,7ffdeb12 <absimmsh+0x7450dd65>
+    8000352c:	deadbeef          	jal	t4,7ffdeb16 <absimmsh+0x7450dd69>
+    80003530:	deadbeef          	jal	t4,7ffdeb1a <absimmsh+0x7450dd6d>
+    80003534:	deadbeef          	jal	t4,7ffdeb1e <absimmsh+0x7450dd71>
+    80003538:	deadbeef          	jal	t4,7ffdeb22 <absimmsh+0x7450dd75>
+    8000353c:	deadbeef          	jal	t4,7ffdeb26 <absimmsh+0x7450dd79>
+    80003540:	deadbeef          	jal	t4,7ffdeb2a <absimmsh+0x7450dd7d>
+    80003544:	deadbeef          	jal	t4,7ffdeb2e <absimmsh+0x7450dd81>
+    80003548:	deadbeef          	jal	t4,7ffdeb32 <absimmsh+0x7450dd85>
+    8000354c:	deadbeef          	jal	t4,7ffdeb36 <absimmsh+0x7450dd89>
+    80003550:	deadbeef          	jal	t4,7ffdeb3a <absimmsh+0x7450dd8d>
+    80003554:	deadbeef          	jal	t4,7ffdeb3e <absimmsh+0x7450dd91>
+    80003558:	deadbeef          	jal	t4,7ffdeb42 <absimmsh+0x7450dd95>
+    8000355c:	deadbeef          	jal	t4,7ffdeb46 <absimmsh+0x7450dd99>
+    80003560:	deadbeef          	jal	t4,7ffdeb4a <absimmsh+0x7450dd9d>
+    80003564:	deadbeef          	jal	t4,7ffdeb4e <absimmsh+0x7450dda1>
+    80003568:	deadbeef          	jal	t4,7ffdeb52 <absimmsh+0x7450dda5>
+    8000356c:	deadbeef          	jal	t4,7ffdeb56 <absimmsh+0x7450dda9>
+    80003570:	deadbeef          	jal	t4,7ffdeb5a <absimmsh+0x7450ddad>
+    80003574:	deadbeef          	jal	t4,7ffdeb5e <absimmsh+0x7450ddb1>
+    80003578:	deadbeef          	jal	t4,7ffdeb62 <absimmsh+0x7450ddb5>
+    8000357c:	deadbeef          	jal	t4,7ffdeb66 <absimmsh+0x7450ddb9>
+
+0000000080003580 <Destination3>:
+    80003580:	deadbeef          	jal	t4,7ffdeb6a <absimmsh+0x7450ddbd>
+    80003584:	deadbeef          	jal	t4,7ffdeb6e <absimmsh+0x7450ddc1>
+    80003588:	deadbeef          	jal	t4,7ffdeb72 <absimmsh+0x7450ddc5>
+    8000358c:	deadbeef          	jal	t4,7ffdeb76 <absimmsh+0x7450ddc9>
+    80003590:	deadbeef          	jal	t4,7ffdeb7a <absimmsh+0x7450ddcd>
+    80003594:	deadbeef          	jal	t4,7ffdeb7e <absimmsh+0x7450ddd1>
+    80003598:	deadbeef          	jal	t4,7ffdeb82 <absimmsh+0x7450ddd5>
+    8000359c:	deadbeef          	jal	t4,7ffdeb86 <absimmsh+0x7450ddd9>
+    800035a0:	deadbeef          	jal	t4,7ffdeb8a <absimmsh+0x7450dddd>
+    800035a4:	deadbeef          	jal	t4,7ffdeb8e <absimmsh+0x7450dde1>
+    800035a8:	deadbeef          	jal	t4,7ffdeb92 <absimmsh+0x7450dde5>
+    800035ac:	deadbeef          	jal	t4,7ffdeb96 <absimmsh+0x7450dde9>
+    800035b0:	deadbeef          	jal	t4,7ffdeb9a <absimmsh+0x7450dded>
+    800035b4:	deadbeef          	jal	t4,7ffdeb9e <absimmsh+0x7450ddf1>
+    800035b8:	deadbeef          	jal	t4,7ffdeba2 <absimmsh+0x7450ddf5>
+    800035bc:	deadbeef          	jal	t4,7ffdeba6 <absimmsh+0x7450ddf9>
+    800035c0:	deadbeef          	jal	t4,7ffdebaa <absimmsh+0x7450ddfd>
+    800035c4:	deadbeef          	jal	t4,7ffdebae <absimmsh+0x7450de01>
+    800035c8:	deadbeef          	jal	t4,7ffdebb2 <absimmsh+0x7450de05>
+    800035cc:	deadbeef          	jal	t4,7ffdebb6 <absimmsh+0x7450de09>
+    800035d0:	deadbeef          	jal	t4,7ffdebba <absimmsh+0x7450de0d>
+    800035d4:	deadbeef          	jal	t4,7ffdebbe <absimmsh+0x7450de11>
+    800035d8:	deadbeef          	jal	t4,7ffdebc2 <absimmsh+0x7450de15>
+    800035dc:	deadbeef          	jal	t4,7ffdebc6 <absimmsh+0x7450de19>
+    800035e0:	deadbeef          	jal	t4,7ffdebca <absimmsh+0x7450de1d>
+    800035e4:	deadbeef          	jal	t4,7ffdebce <absimmsh+0x7450de21>
+    800035e8:	deadbeef          	jal	t4,7ffdebd2 <absimmsh+0x7450de25>
+    800035ec:	deadbeef          	jal	t4,7ffdebd6 <absimmsh+0x7450de29>
+    800035f0:	deadbeef          	jal	t4,7ffdebda <absimmsh+0x7450de2d>
+    800035f4:	deadbeef          	jal	t4,7ffdebde <absimmsh+0x7450de31>
+    800035f8:	deadbeef          	jal	t4,7ffdebe2 <absimmsh+0x7450de35>
+    800035fc:	deadbeef          	jal	t4,7ffdebe6 <absimmsh+0x7450de39>
+    80003600:	deadbeef          	jal	t4,7ffdebea <absimmsh+0x7450de3d>
+    80003604:	deadbeef          	jal	t4,7ffdebee <absimmsh+0x7450de41>
+    80003608:	deadbeef          	jal	t4,7ffdebf2 <absimmsh+0x7450de45>
+    8000360c:	deadbeef          	jal	t4,7ffdebf6 <absimmsh+0x7450de49>
+    80003610:	deadbeef          	jal	t4,7ffdebfa <absimmsh+0x7450de4d>
+    80003614:	deadbeef          	jal	t4,7ffdebfe <absimmsh+0x7450de51>
+    80003618:	deadbeef          	jal	t4,7ffdec02 <absimmsh+0x7450de55>
+    8000361c:	deadbeef          	jal	t4,7ffdec06 <absimmsh+0x7450de59>
+    80003620:	deadbeef          	jal	t4,7ffdec0a <absimmsh+0x7450de5d>
+    80003624:	deadbeef          	jal	t4,7ffdec0e <absimmsh+0x7450de61>
+    80003628:	deadbeef          	jal	t4,7ffdec12 <absimmsh+0x7450de65>
+    8000362c:	deadbeef          	jal	t4,7ffdec16 <absimmsh+0x7450de69>
+    80003630:	deadbeef          	jal	t4,7ffdec1a <absimmsh+0x7450de6d>
+    80003634:	deadbeef          	jal	t4,7ffdec1e <absimmsh+0x7450de71>
+    80003638:	deadbeef          	jal	t4,7ffdec22 <absimmsh+0x7450de75>
+    8000363c:	deadbeef          	jal	t4,7ffdec26 <absimmsh+0x7450de79>
+    80003640:	deadbeef          	jal	t4,7ffdec2a <absimmsh+0x7450de7d>
+    80003644:	deadbeef          	jal	t4,7ffdec2e <absimmsh+0x7450de81>
+    80003648:	deadbeef          	jal	t4,7ffdec32 <absimmsh+0x7450de85>
+    8000364c:	deadbeef          	jal	t4,7ffdec36 <absimmsh+0x7450de89>
+    80003650:	deadbeef          	jal	t4,7ffdec3a <absimmsh+0x7450de8d>
+    80003654:	deadbeef          	jal	t4,7ffdec3e <absimmsh+0x7450de91>
+    80003658:	deadbeef          	jal	t4,7ffdec42 <absimmsh+0x7450de95>
+    8000365c:	deadbeef          	jal	t4,7ffdec46 <absimmsh+0x7450de99>
+    80003660:	deadbeef          	jal	t4,7ffdec4a <absimmsh+0x7450de9d>
+    80003664:	deadbeef          	jal	t4,7ffdec4e <absimmsh+0x7450dea1>
+    80003668:	deadbeef          	jal	t4,7ffdec52 <absimmsh+0x7450dea5>
+    8000366c:	deadbeef          	jal	t4,7ffdec56 <absimmsh+0x7450dea9>
+    80003670:	deadbeef          	jal	t4,7ffdec5a <absimmsh+0x7450dead>
+    80003674:	deadbeef          	jal	t4,7ffdec5e <absimmsh+0x7450deb1>
+    80003678:	deadbeef          	jal	t4,7ffdec62 <absimmsh+0x7450deb5>
+    8000367c:	deadbeef          	jal	t4,7ffdec66 <absimmsh+0x7450deb9>
+    80003680:	deadbeef          	jal	t4,7ffdec6a <absimmsh+0x7450debd>
+    80003684:	deadbeef          	jal	t4,7ffdec6e <absimmsh+0x7450dec1>
+    80003688:	deadbeef          	jal	t4,7ffdec72 <absimmsh+0x7450dec5>
+    8000368c:	deadbeef          	jal	t4,7ffdec76 <absimmsh+0x7450dec9>
+    80003690:	deadbeef          	jal	t4,7ffdec7a <absimmsh+0x7450decd>
+    80003694:	deadbeef          	jal	t4,7ffdec7e <absimmsh+0x7450ded1>
+    80003698:	deadbeef          	jal	t4,7ffdec82 <absimmsh+0x7450ded5>
+    8000369c:	deadbeef          	jal	t4,7ffdec86 <absimmsh+0x7450ded9>
+    800036a0:	deadbeef          	jal	t4,7ffdec8a <absimmsh+0x7450dedd>
+    800036a4:	deadbeef          	jal	t4,7ffdec8e <absimmsh+0x7450dee1>
+    800036a8:	deadbeef          	jal	t4,7ffdec92 <absimmsh+0x7450dee5>
+    800036ac:	deadbeef          	jal	t4,7ffdec96 <absimmsh+0x7450dee9>
+    800036b0:	deadbeef          	jal	t4,7ffdec9a <absimmsh+0x7450deed>
+    800036b4:	deadbeef          	jal	t4,7ffdec9e <absimmsh+0x7450def1>
+    800036b8:	deadbeef          	jal	t4,7ffdeca2 <absimmsh+0x7450def5>
+    800036bc:	deadbeef          	jal	t4,7ffdeca6 <absimmsh+0x7450def9>
+    800036c0:	deadbeef          	jal	t4,7ffdecaa <absimmsh+0x7450defd>
+    800036c4:	deadbeef          	jal	t4,7ffdecae <absimmsh+0x7450df01>
+    800036c8:	deadbeef          	jal	t4,7ffdecb2 <absimmsh+0x7450df05>
+    800036cc:	deadbeef          	jal	t4,7ffdecb6 <absimmsh+0x7450df09>
+    800036d0:	deadbeef          	jal	t4,7ffdecba <absimmsh+0x7450df0d>
+    800036d4:	deadbeef          	jal	t4,7ffdecbe <absimmsh+0x7450df11>
+    800036d8:	deadbeef          	jal	t4,7ffdecc2 <absimmsh+0x7450df15>
+    800036dc:	deadbeef          	jal	t4,7ffdecc6 <absimmsh+0x7450df19>
+    800036e0:	deadbeef          	jal	t4,7ffdecca <absimmsh+0x7450df1d>
+    800036e4:	deadbeef          	jal	t4,7ffdecce <absimmsh+0x7450df21>
+    800036e8:	deadbeef          	jal	t4,7ffdecd2 <absimmsh+0x7450df25>
+    800036ec:	deadbeef          	jal	t4,7ffdecd6 <absimmsh+0x7450df29>
+    800036f0:	deadbeef          	jal	t4,7ffdecda <absimmsh+0x7450df2d>
+    800036f4:	deadbeef          	jal	t4,7ffdecde <absimmsh+0x7450df31>
+    800036f8:	deadbeef          	jal	t4,7ffdece2 <absimmsh+0x7450df35>
+    800036fc:	deadbeef          	jal	t4,7ffdece6 <absimmsh+0x7450df39>
+    80003700:	deadbeef          	jal	t4,7ffdecea <absimmsh+0x7450df3d>
+    80003704:	deadbeef          	jal	t4,7ffdecee <absimmsh+0x7450df41>
+    80003708:	deadbeef          	jal	t4,7ffdecf2 <absimmsh+0x7450df45>
+    8000370c:	deadbeef          	jal	t4,7ffdecf6 <absimmsh+0x7450df49>
+    80003710:	deadbeef          	jal	t4,7ffdecfa <absimmsh+0x7450df4d>
+    80003714:	deadbeef          	jal	t4,7ffdecfe <absimmsh+0x7450df51>
+    80003718:	deadbeef          	jal	t4,7ffded02 <absimmsh+0x7450df55>
+    8000371c:	deadbeef          	jal	t4,7ffded06 <absimmsh+0x7450df59>
+    80003720:	deadbeef          	jal	t4,7ffded0a <absimmsh+0x7450df5d>
+    80003724:	deadbeef          	jal	t4,7ffded0e <absimmsh+0x7450df61>
+    80003728:	deadbeef          	jal	t4,7ffded12 <absimmsh+0x7450df65>
+    8000372c:	deadbeef          	jal	t4,7ffded16 <absimmsh+0x7450df69>
+    80003730:	deadbeef          	jal	t4,7ffded1a <absimmsh+0x7450df6d>
+    80003734:	deadbeef          	jal	t4,7ffded1e <absimmsh+0x7450df71>
+    80003738:	deadbeef          	jal	t4,7ffded22 <absimmsh+0x7450df75>
+    8000373c:	deadbeef          	jal	t4,7ffded26 <absimmsh+0x7450df79>
+    80003740:	deadbeef          	jal	t4,7ffded2a <absimmsh+0x7450df7d>
+    80003744:	deadbeef          	jal	t4,7ffded2e <absimmsh+0x7450df81>
+    80003748:	deadbeef          	jal	t4,7ffded32 <absimmsh+0x7450df85>
+    8000374c:	deadbeef          	jal	t4,7ffded36 <absimmsh+0x7450df89>
+    80003750:	deadbeef          	jal	t4,7ffded3a <absimmsh+0x7450df8d>
+    80003754:	deadbeef          	jal	t4,7ffded3e <absimmsh+0x7450df91>
+    80003758:	deadbeef          	jal	t4,7ffded42 <absimmsh+0x7450df95>
+    8000375c:	deadbeef          	jal	t4,7ffded46 <absimmsh+0x7450df99>
+    80003760:	deadbeef          	jal	t4,7ffded4a <absimmsh+0x7450df9d>
+    80003764:	deadbeef          	jal	t4,7ffded4e <absimmsh+0x7450dfa1>
+    80003768:	deadbeef          	jal	t4,7ffded52 <absimmsh+0x7450dfa5>
+    8000376c:	deadbeef          	jal	t4,7ffded56 <absimmsh+0x7450dfa9>
+    80003770:	deadbeef          	jal	t4,7ffded5a <absimmsh+0x7450dfad>
+    80003774:	deadbeef          	jal	t4,7ffded5e <absimmsh+0x7450dfb1>
+    80003778:	deadbeef          	jal	t4,7ffded62 <absimmsh+0x7450dfb5>
+    8000377c:	deadbeef          	jal	t4,7ffded66 <absimmsh+0x7450dfb9>
+
+0000000080003780 <signature>:
+    80003780:	0bad                	.insn	2, 0x0bad
+    80003782:	0bad                	.insn	2, 0x0bad
+    80003784:	0bad                	.insn	2, 0x0bad
+    80003786:	0bad                	.insn	2, 0x0bad
+    80003788:	0bad                	.insn	2, 0x0bad
+    8000378a:	0bad                	.insn	2, 0x0bad
+    8000378c:	0bad                	.insn	2, 0x0bad
+    8000378e:	0bad                	.insn	2, 0x0bad
+    80003790:	0bad                	.insn	2, 0x0bad
+    80003792:	0bad                	.insn	2, 0x0bad
+    80003794:	0bad                	.insn	2, 0x0bad
+    80003796:	0bad                	.insn	2, 0x0bad
+    80003798:	0bad                	.insn	2, 0x0bad
+    8000379a:	0bad                	.insn	2, 0x0bad
+    8000379c:	0bad                	.insn	2, 0x0bad
+    8000379e:	0bad                	.insn	2, 0x0bad
+    800037a0:	0bad                	.insn	2, 0x0bad
+    800037a2:	0bad                	.insn	2, 0x0bad
+    800037a4:	0bad                	.insn	2, 0x0bad
+    800037a6:	0bad                	.insn	2, 0x0bad
+    800037a8:	0bad                	.insn	2, 0x0bad
+    800037aa:	0bad                	.insn	2, 0x0bad
+    800037ac:	0bad                	.insn	2, 0x0bad
+    800037ae:	0bad                	.insn	2, 0x0bad
+    800037b0:	0bad                	.insn	2, 0x0bad
+    800037b2:	0bad                	.insn	2, 0x0bad
+    800037b4:	0bad                	.insn	2, 0x0bad
+    800037b6:	0bad                	.insn	2, 0x0bad
+    800037b8:	0bad                	.insn	2, 0x0bad
+    800037ba:	0bad                	.insn	2, 0x0bad
+    800037bc:	0bad                	.insn	2, 0x0bad
+    800037be:	0bad                	.insn	2, 0x0bad
+    800037c0:	0bad                	.insn	2, 0x0bad
+    800037c2:	0bad                	.insn	2, 0x0bad
+    800037c4:	0bad                	.insn	2, 0x0bad
+    800037c6:	0bad                	.insn	2, 0x0bad
+    800037c8:	0bad                	.insn	2, 0x0bad
+    800037ca:	0bad                	.insn	2, 0x0bad
+    800037cc:	0bad                	.insn	2, 0x0bad
+    800037ce:	0bad                	.insn	2, 0x0bad
+    800037d0:	0bad                	.insn	2, 0x0bad
+    800037d2:	0bad                	.insn	2, 0x0bad
+    800037d4:	0bad                	.insn	2, 0x0bad
+    800037d6:	0bad                	.insn	2, 0x0bad
+    800037d8:	0bad                	.insn	2, 0x0bad
+    800037da:	0bad                	.insn	2, 0x0bad
+    800037dc:	0bad                	.insn	2, 0x0bad
+    800037de:	0bad                	.insn	2, 0x0bad
+    800037e0:	0bad                	.insn	2, 0x0bad
+    800037e2:	0bad                	.insn	2, 0x0bad
+    800037e4:	0bad                	.insn	2, 0x0bad
+    800037e6:	0bad                	.insn	2, 0x0bad
+    800037e8:	0bad                	.insn	2, 0x0bad
+    800037ea:	0bad                	.insn	2, 0x0bad
+    800037ec:	0bad                	.insn	2, 0x0bad
+    800037ee:	0bad                	.insn	2, 0x0bad
+    800037f0:	0bad                	.insn	2, 0x0bad
+    800037f2:	0bad                	.insn	2, 0x0bad
+    800037f4:	0bad                	.insn	2, 0x0bad
+    800037f6:	0bad                	.insn	2, 0x0bad
+    800037f8:	0bad                	.insn	2, 0x0bad
+    800037fa:	0bad                	.insn	2, 0x0bad
+    800037fc:	0bad                	.insn	2, 0x0bad
+    800037fe:	0bad                	.insn	2, 0x0bad
+    80003800:	0bad                	.insn	2, 0x0bad
+    80003802:	0bad                	.insn	2, 0x0bad
+    80003804:	0bad                	.insn	2, 0x0bad
+    80003806:	0bad                	.insn	2, 0x0bad
+    80003808:	0bad                	.insn	2, 0x0bad
+    8000380a:	0bad                	.insn	2, 0x0bad
+    8000380c:	0bad                	.insn	2, 0x0bad
+    8000380e:	0bad                	.insn	2, 0x0bad
+    80003810:	0bad                	.insn	2, 0x0bad
+    80003812:	0bad                	.insn	2, 0x0bad
+    80003814:	0bad                	.insn	2, 0x0bad
+    80003816:	0bad                	.insn	2, 0x0bad
+    80003818:	0bad                	.insn	2, 0x0bad
+    8000381a:	0bad                	.insn	2, 0x0bad
+    8000381c:	0bad                	.insn	2, 0x0bad
+    8000381e:	0bad                	.insn	2, 0x0bad
+    80003820:	0bad                	.insn	2, 0x0bad
+    80003822:	0bad                	.insn	2, 0x0bad
+    80003824:	0bad                	.insn	2, 0x0bad
+    80003826:	0bad                	.insn	2, 0x0bad
+    80003828:	0bad                	.insn	2, 0x0bad
+    8000382a:	0bad                	.insn	2, 0x0bad
+    8000382c:	0bad                	.insn	2, 0x0bad
+    8000382e:	0bad                	.insn	2, 0x0bad
+
+0000000080003830 <sig_end_canary>:
+    80003830:	0000                	.insn	2, 0x0000
+	...
+
+0000000080003834 <rvtest_sig_end>:
+	...
+
+Disassembly of section .riscv.attributes:
+
+0000000000000000 <.riscv.attributes>:
+   0:	2341                	.insn	2, 0x2341
+   2:	0000                	.insn	2, 0x0000
+   4:	7200                	.insn	2, 0x7200
+   6:	7369                	.insn	2, 0x7369
+   8:	01007663          	bgeu	zero,a6,14 <edge2+0xf>
+   c:	0019                	.insn	2, 0x0019
+   e:	0000                	.insn	2, 0x0000
+  10:	7205                	.insn	2, 0x7205
+  12:	3676                	.insn	2, 0x3676
+  14:	6934                	.insn	2, 0x6934
+  16:	7032                	.insn	2, 0x7032
+  18:	5f31                	.insn	2, 0x5f31
+  1a:	697a                	.insn	2, 0x697a
+  1c:	6d6f6263          	bltu	t5,s6,6e0 <pos+0x6a0>
+  20:	7031                	.insn	2, 0x7031
+  22:	0030                	.insn	2, 0x0030

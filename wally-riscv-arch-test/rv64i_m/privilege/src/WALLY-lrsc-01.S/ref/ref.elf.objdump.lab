@@ -1,0 +1,11 @@
+rvtest_entry_point
+write_tohost
+tohost
+fromhost
+rvtest_data_begin
+mtrap_sigptr
+begin_regstate
+end_regstate
+begin_signature
+sig_end_canary
+rvtest_sig_end

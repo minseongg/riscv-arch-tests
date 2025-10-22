@@ -1,0 +1,16 @@
+rvtest_entry_point
+rvtest_code_begin
+inst_0
+cleanup_epilogs
+abort_tests
+exit_cleanup
+write_tohost
+tohost
+fromhost
+rvtest_data_begin
+begin_regstate
+end_regstate
+begin_signature
+signature_x1_0
+sig_end_canary
+rvtest_sig_end

@@ -1,0 +1,268 @@
+
+ref.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text.init:
+
+0000000080000000 <rvtest_entry_point>:
+    80000000:	00003317          	auipc	t1,0x3
+    80000004:	11030313          	addi	t1,t1,272 # 80003110 <begin_signature>
+    80000008:	00002f97          	auipc	t6,0x2
+    8000000c:	ff8f8f93          	addi	t6,t6,-8 # 80002000 <rvtest_data_begin>
+    80000010:	02a00593          	li	a1,42
+    80000014:	100fa52f          	lr.w	a0,(t6)
+    80000018:	18bfa62f          	sc.w	a2,a1,(t6)
+    8000001c:	000fa683          	lw	a3,0(t6)
+    80000020:	00a33023          	sd	a0,0(t1)
+    80000024:	00c33423          	sd	a2,8(t1)
+    80000028:	00d33823          	sd	a3,16(t1)
+    8000002c:	01830313          	addi	t1,t1,24
+    80000030:	008f8f13          	addi	t5,t6,8
+    80000034:	02b00593          	li	a1,43
+    80000038:	100f252f          	lr.w	a0,(t5)
+    8000003c:	18bfa62f          	sc.w	a2,a1,(t6)
+    80000040:	000fa683          	lw	a3,0(t6)
+    80000044:	00a33023          	sd	a0,0(t1)
+    80000048:	00c33423          	sd	a2,8(t1)
+    8000004c:	00d33823          	sd	a3,16(t1)
+    80000050:	01830313          	addi	t1,t1,24
+    80000054:	008f0f93          	addi	t6,t5,8
+    80000058:	02c00593          	li	a1,44
+    8000005c:	100fb52f          	lr.d	a0,(t6)
+    80000060:	18bfb62f          	sc.d	a2,a1,(t6)
+    80000064:	000fa683          	lw	a3,0(t6)
+    80000068:	00a33023          	sd	a0,0(t1)
+    8000006c:	00c33423          	sd	a2,8(t1)
+    80000070:	00d33823          	sd	a3,16(t1)
+    80000074:	01830313          	addi	t1,t1,24
+    80000078:	008f8f13          	addi	t5,t6,8
+    8000007c:	02d00593          	li	a1,45
+    80000080:	100f352f          	lr.d	a0,(t5)
+    80000084:	18bfb62f          	sc.d	a2,a1,(t6)
+    80000088:	000fa683          	lw	a3,0(t6)
+    8000008c:	00a33023          	sd	a0,0(t1)
+    80000090:	00c33423          	sd	a2,8(t1)
+    80000094:	00d33823          	sd	a3,16(t1)
+    80000098:	00100093          	li	ra,1
+
+000000008000009c <write_tohost>:
+    8000009c:	00001297          	auipc	t0,0x1
+    800000a0:	f612a223          	sw	ra,-156(t0) # 80001000 <tohost>
+    800000a4:	ff9ff06f          	j	8000009c <write_tohost>
+
+Disassembly of section .tohost:
+
+0000000080001000 <tohost>:
+	...
+
+0000000080001100 <fromhost>:
+	...
+
+Disassembly of section .data:
+
+0000000080002000 <rvtest_data_begin>:
+    80002000:	fffe                	.insn	2, 0xfffe
+    80002002:	ffff                	.insn	2, 0xffff
+    80002004:	fffd                	.insn	2, 0xfffd
+    80002006:	ffff                	.insn	2, 0xffff
+    80002008:	fffffffb          	.insn	4, 0xfffffffb
+    8000200c:	fffffff7          	.insn	4, 0xfffffff7
+    80002010:	ffffffef          	jal	t6,8000200e <rvtest_data_begin+0xe>
+    80002014:	ffdf ffff ffbf      	.insn	6, 0xffbfffffffdf
+    8000201a:	ffff                	.insn	2, 0xffff
+    8000201c:	ff7f                	.insn	2, 0xff7f
+    8000201e:	ffff                	.insn	2, 0xffff
+    80002020:	feff                	.insn	2, 0xfeff
+    80002022:	ffff                	.insn	2, 0xffff
+    80002024:	fdff                	.insn	2, 0xfdff
+    80002026:	ffff                	.insn	2, 0xffff
+    80002028:	feff                	.insn	2, 0xfeff
+    8000202a:	ffff                	.insn	2, 0xffff
+    8000202c:	f7ff                	.insn	2, 0xf7ff
+    8000202e:	ffff                	.insn	2, 0xffff
+    80002030:	efff ffff dfff ffff 	.insn	22, 0xfffffffeffffffff7fffffffefffffffdfffffffefff
+    80002038:	efff ffff 7fff ffff 
+    80002040:	ffff fffe ffff 
+    80002046:	fffd                	.insn	2, 0xfffd
+    80002048:	ffff                	.insn	2, 0xffff
+    8000204a:	fffffffb          	.insn	4, 0xfffffffb
+    8000204e:	fffffff7          	.insn	4, 0xfffffff7
+    80002052:	ffffffef          	jal	t6,80002050 <rvtest_data_begin+0x50>
+    80002056:	ffdf ffff ffbf      	.insn	6, 0xffbfffffffdf
+    8000205c:	ffff                	.insn	2, 0xffff
+    8000205e:	ff7f                	.insn	2, 0xff7f
+    80002060:	ffff                	.insn	2, 0xffff
+    80002062:	feff                	.insn	2, 0xfeff
+    80002064:	ffff                	.insn	2, 0xffff
+    80002066:	fdff                	.insn	2, 0xfdff
+    80002068:	ffff                	.insn	2, 0xffff
+    8000206a:	feff                	.insn	2, 0xfeff
+    8000206c:	ffff                	.insn	2, 0xffff
+    8000206e:	f7ff                	.insn	2, 0xf7ff
+    80002070:	ffff                	.insn	2, 0xffff
+    80002072:	efff ffff dfff ffff 	.insn	22, 0x0001ffffffff7fffffffefffffffdfffffffefff
+    8000207a:	efff ffff 7fff ffff 
+    80002082:	ffff 0001 0000 
+    80002088:	0002                	.insn	2, 0x0002
+    8000208a:	0000                	.insn	2, 0x0000
+    8000208c:	0004                	.insn	2, 0x0004
+    8000208e:	0000                	.insn	2, 0x0000
+    80002090:	0008                	.insn	2, 0x0008
+    80002092:	0000                	.insn	2, 0x0000
+    80002094:	0010                	.insn	2, 0x0010
+    80002096:	0000                	.insn	2, 0x0000
+    80002098:	0020                	.insn	2, 0x0020
+    8000209a:	0000                	.insn	2, 0x0000
+    8000209c:	0040                	.insn	2, 0x0040
+    8000209e:	0000                	.insn	2, 0x0000
+    800020a0:	0080                	.insn	2, 0x0080
+    800020a2:	0000                	.insn	2, 0x0000
+    800020a4:	0100                	.insn	2, 0x0100
+    800020a6:	0000                	.insn	2, 0x0000
+    800020a8:	0200                	.insn	2, 0x0200
+    800020aa:	0000                	.insn	2, 0x0000
+    800020ac:	0400                	.insn	2, 0x0400
+    800020ae:	0000                	.insn	2, 0x0000
+    800020b0:	0800                	.insn	2, 0x0800
+    800020b2:	0000                	.insn	2, 0x0000
+    800020b4:	1000                	.insn	2, 0x1000
+    800020b6:	0000                	.insn	2, 0x0000
+    800020b8:	2000                	.insn	2, 0x2000
+    800020ba:	0000                	.insn	2, 0x0000
+    800020bc:	4000                	.insn	2, 0x4000
+    800020be:	0000                	.insn	2, 0x0000
+    800020c0:	8000                	.insn	2, 0x8000
+    800020c2:	0000                	.insn	2, 0x0000
+    800020c4:	0001                	.insn	2, 0x0001
+    800020c6:	0000                	.insn	2, 0x0000
+    800020c8:	0002                	.insn	2, 0x0002
+    800020ca:	0000                	.insn	2, 0x0000
+    800020cc:	0000                	.insn	2, 0x0000
+    800020ce:	0004                	.insn	2, 0x0004
+    800020d0:	0000                	.insn	2, 0x0000
+    800020d2:	0008                	.insn	2, 0x0008
+    800020d4:	0010                	.insn	2, 0x0010
+    800020d6:	0000                	.insn	2, 0x0000
+    800020d8:	0020                	.insn	2, 0x0020
+    800020da:	0000                	.insn	2, 0x0000
+    800020dc:	0000                	.insn	2, 0x0000
+    800020de:	0040                	.insn	2, 0x0040
+    800020e0:	0000                	.insn	2, 0x0000
+    800020e2:	0080                	.insn	2, 0x0080
+    800020e4:	0100                	.insn	2, 0x0100
+    800020e6:	0000                	.insn	2, 0x0000
+    800020e8:	0200                	.insn	2, 0x0200
+    800020ea:	0000                	.insn	2, 0x0000
+    800020ec:	0000                	.insn	2, 0x0000
+    800020ee:	0400                	.insn	2, 0x0400
+    800020f0:	0000                	.insn	2, 0x0000
+    800020f2:	0800                	.insn	2, 0x0800
+    800020f4:	1000                	.insn	2, 0x1000
+    800020f6:	0000                	.insn	2, 0x0000
+    800020f8:	2000                	.insn	2, 0x2000
+    800020fa:	0000                	.insn	2, 0x0000
+    800020fc:	0000                	.insn	2, 0x0000
+    800020fe:	4000                	.insn	2, 0x4000
+    80002100:	0000                	.insn	2, 0x0000
+    80002102:	8000                	.insn	2, 0x8000
+    80002104:	0000                	.insn	2, 0x0000
+	...
+
+0000000080002108 <mtrap_sigptr>:
+    80002108:	deadbeef          	jal	t4,7ffdd6f2 <MMODE_SIG+0x7ffdd6ef>
+    8000210c:	deadbeef          	jal	t4,7ffdd6f6 <MMODE_SIG+0x7ffdd6f3>
+	...
+
+0000000080003000 <begin_regstate>:
+    80003000:	0080                	.insn	2, 0x0080
+	...
+
+0000000080003100 <end_regstate>:
+    80003100:	0004                	.insn	2, 0x0004
+	...
+
+0000000080003110 <begin_signature>:
+    80003110:	ffff                	.insn	2, 0xffff
+    80003112:	ffff                	.insn	2, 0xffff
+    80003114:	0000                	.insn	2, 0x0000
+    80003116:	0000                	.insn	2, 0x0000
+    80003118:	ffff                	.insn	2, 0xffff
+    8000311a:	ffff                	.insn	2, 0xffff
+    8000311c:	0000                	.insn	2, 0x0000
+    8000311e:	0000                	.insn	2, 0x0000
+    80003120:	ffff                	.insn	2, 0xffff
+    80003122:	ffff                	.insn	2, 0xffff
+    80003124:	0000                	.insn	2, 0x0000
+    80003126:	0000                	.insn	2, 0x0000
+    80003128:	ffff                	.insn	2, 0xffff
+    8000312a:	ffff                	.insn	2, 0xffff
+    8000312c:	0000                	.insn	2, 0x0000
+    8000312e:	0000                	.insn	2, 0x0000
+    80003130:	ffff                	.insn	2, 0xffff
+    80003132:	ffff                	.insn	2, 0xffff
+    80003134:	0000                	.insn	2, 0x0000
+    80003136:	0000                	.insn	2, 0x0000
+    80003138:	ffff                	.insn	2, 0xffff
+    8000313a:	ffff                	.insn	2, 0xffff
+    8000313c:	0000                	.insn	2, 0x0000
+    8000313e:	0000                	.insn	2, 0x0000
+    80003140:	ffff                	.insn	2, 0xffff
+    80003142:	ffff                	.insn	2, 0xffff
+    80003144:	0000                	.insn	2, 0x0000
+    80003146:	0000                	.insn	2, 0x0000
+    80003148:	ffff                	.insn	2, 0xffff
+    8000314a:	ffff                	.insn	2, 0xffff
+    8000314c:	0000                	.insn	2, 0x0000
+    8000314e:	0000                	.insn	2, 0x0000
+    80003150:	ffff                	.insn	2, 0xffff
+    80003152:	ffff                	.insn	2, 0xffff
+    80003154:	0000                	.insn	2, 0x0000
+    80003156:	0000                	.insn	2, 0x0000
+    80003158:	ffff                	.insn	2, 0xffff
+    8000315a:	ffff                	.insn	2, 0xffff
+    8000315c:	0000                	.insn	2, 0x0000
+    8000315e:	0000                	.insn	2, 0x0000
+    80003160:	ffff                	.insn	2, 0xffff
+    80003162:	ffff                	.insn	2, 0xffff
+    80003164:	0000                	.insn	2, 0x0000
+    80003166:	0000                	.insn	2, 0x0000
+    80003168:	ffff                	.insn	2, 0xffff
+    8000316a:	ffff                	.insn	2, 0xffff
+    8000316c:	0000                	.insn	2, 0x0000
+	...
+
+0000000080003170 <sig_end_canary>:
+    80003170:	0000                	.insn	2, 0x0000
+	...
+
+0000000080003174 <rvtest_sig_end>:
+	...
+
+Disassembly of section .riscv.attributes:
+
+0000000000000000 <.riscv.attributes>:
+   0:	3f41                	.insn	2, 0x3f41
+   2:	0000                	.insn	2, 0x0000
+   4:	7200                	.insn	2, 0x7200
+   6:	7369                	.insn	2, 0x7369
+   8:	01007663          	bgeu	zero,a6,14 <MMODE_SIG+0x11>
+   c:	0035                	.insn	2, 0x0035
+   e:	0000                	.insn	2, 0x0000
+  10:	7205                	.insn	2, 0x7205
+  12:	3676                	.insn	2, 0x3676
+  14:	6934                	.insn	2, 0x6934
+  16:	7032                	.insn	2, 0x7032
+  18:	5f31                	.insn	2, 0x5f31
+  1a:	3261                	.insn	2, 0x3261
+  1c:	3170                	.insn	2, 0x3170
+  1e:	665f 7032 5f32      	.insn	6, 0x5f327032665f
+  24:	697a                	.insn	2, 0x697a
+  26:	32727363          	bgeu	tp,t2,34c <MMODE_SIG+0x349>
+  2a:	3070                	.insn	2, 0x3070
+  2c:	7a5f 6161 6f6d      	.insn	6, 0x6f6d61617a5f
+  32:	7031                	.insn	2, 0x7031
+  34:	5f30                	.insn	2, 0x5f30
+  36:	617a                	.insn	2, 0x617a
+  38:	726c                	.insn	2, 0x726c
+  3a:	70316373          	csrrsi	t1,0x703,2
+  3e:	0030                	.insn	2, 0x0030
