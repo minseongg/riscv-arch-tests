@@ -1,0 +1,765 @@
+using /home/minseong.jang/cvw/tests/riscof/riscof_work/arch64/rv64i_m/hints/src/fence-01.S/ref/Reference-sail_c_simulator.signature for test-signature output.
+HTIF located at 0x80001000
+begin_signature: 0x80003110
+end_signature: 0x80003130
+Entry point: 0x80000000
+CSR mstatus (0x300) <- 0x0000000A00000000
+CSR misa (0x301) <- 0x800000000014112F
+CSR mcause (0x342) <- 0x0000000000000000
+x10 <- 0x0000000000000000
+x11 <- 0x0000000000001000
+mem[X,0x0000000080000000] -> 0x0837
+mem[X,0x0000000080000002] -> 0x7D5C
+[0] [M]: 0x0000000080000000 (0x7D5C0837) lui x16, 0x7d5c0                           rvtest_init+0
+x16 <- 0x000000007D5C0000
+
+mem[X,0x0000000080000004] -> 0x0813
+mem[X,0x0000000080000006] -> 0xDDB8
+[1] [M]: 0x0000000080000004 (0xDDB80813) addi x16, x16, -0x225                      rvtest_init+4
+x16 <- 0x000000007D5BFDDB
+
+clint mtime 0x0000000000000001 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000008] -> 0x1813
+mem[X,0x000000008000000A] -> 0x00B8
+[2] [M]: 0x0000000080000008 (0x00B81813) slli x16, x16, 0xb                         rvtest_init+8
+x16 <- 0x000003EADFEED800
+
+mem[X,0x000000008000000C] -> 0x0813
+mem[X,0x000000008000000E] -> 0x3EA8
+[3] [M]: 0x000000008000000C (0x3EA80813) addi x16, x16, 0x3ea                       rvtest_init+12
+x16 <- 0x000003EADFEEDBEA
+
+clint mtime 0x0000000000000002 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000010] -> 0x1813
+mem[X,0x0000000080000012] -> 0x00B8
+[4] [M]: 0x0000000080000010 (0x00B81813) slli x16, x16, 0xb                         rvtest_init+16
+x16 <- 0x001F56FF76DF5000
+
+mem[X,0x0000000080000014] -> 0x0813
+mem[X,0x0000000080000016] -> 0x6FF8
+[5] [M]: 0x0000000080000014 (0x6FF80813) addi x16, x16, 0x6ff                       rvtest_init+20
+x16 <- 0x001F56FF76DF56FF
+
+clint mtime 0x0000000000000003 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000018] -> 0x1813
+mem[X,0x000000008000001A] -> 0x00A8
+[6] [M]: 0x0000000080000018 (0x00A81813) slli x16, x16, 0xa                         rvtest_init+24
+x16 <- 0x7D5BFDDB7D5BFC00
+
+mem[X,0x000000008000001C] -> 0x0813
+mem[X,0x000000008000001E] -> 0x1DB8
+[7] [M]: 0x000000008000001C (0x1DB80813) addi x16, x16, 0x1db                       rvtest_init+28
+x16 <- 0x7D5BFDDB7D5BFDDB
+
+clint mtime 0x0000000000000004 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000020] -> 0x5893
+mem[X,0x0000000080000022] -> 0x0078
+[8] [M]: 0x0000000080000020 (0x00785893) srli x17, x16, 0x7                         rvtest_init+32
+x17 <- 0x00FAB7FBB6FAB7FB
+
+mem[X,0x0000000080000024] -> 0x5793
+mem[X,0x0000000080000026] -> 0x0398
+[9] [M]: 0x0000000080000024 (0x03985793) srli x15, x16, 0x39                        rvtest_init+36
+x15 <- 0x000000000000003E
+
+clint mtime 0x0000000000000005 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000028] -> 0xE8B3
+mem[X,0x000000008000002A] -> 0x00F8
+[10] [M]: 0x0000000080000028 (0x00F8E8B3) or x17, x17, x15                          rvtest_init+40
+x17 <- 0x00FAB7FBB6FAB7FF
+
+mem[X,0x000000008000002C] -> 0xD913
+mem[X,0x000000008000002E] -> 0x0078
+[11] [M]: 0x000000008000002C (0x0078D913) srli x18, x17, 0x7                        rvtest_init+44
+x18 <- 0x0001F56FF76DF56F
+
+clint mtime 0x0000000000000006 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000030] -> 0xD793
+mem[X,0x0000000080000032] -> 0x0398
+[12] [M]: 0x0000000080000030 (0x0398D793) srli x15, x17, 0x39                       rvtest_init+48
+x15 <- 0x0000000000000000
+
+mem[X,0x0000000080000034] -> 0x6933
+mem[X,0x0000000080000036] -> 0x00F9
+[13] [M]: 0x0000000080000034 (0x00F96933) or x18, x18, x15                          rvtest_init+52
+x18 <- 0x0001F56FF76DF56F
+
+clint mtime 0x0000000000000007 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000038] -> 0x5993
+mem[X,0x000000008000003A] -> 0x0079
+[14] [M]: 0x0000000080000038 (0x00795993) srli x19, x18, 0x7                        rvtest_init+56
+x19 <- 0x000003EADFEEDBEA
+
+mem[X,0x000000008000003C] -> 0x5793
+mem[X,0x000000008000003E] -> 0x0399
+[15] [M]: 0x000000008000003C (0x03995793) srli x15, x18, 0x39                       rvtest_init+60
+x15 <- 0x0000000000000000
+
+clint mtime 0x0000000000000008 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000040] -> 0xE9B3
+mem[X,0x0000000080000042] -> 0x00F9
+[16] [M]: 0x0000000080000040 (0x00F9E9B3) or x19, x19, x15                          rvtest_init+64
+x19 <- 0x000003EADFEEDBEA
+
+mem[X,0x0000000080000044] -> 0xDA13
+mem[X,0x0000000080000046] -> 0x0079
+[17] [M]: 0x0000000080000044 (0x0079DA13) srli x20, x19, 0x7                        rvtest_init+68
+x20 <- 0x00000007D5BFDDB7
+
+clint mtime 0x0000000000000009 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000048] -> 0xD793
+mem[X,0x000000008000004A] -> 0x0399
+[18] [M]: 0x0000000080000048 (0x0399D793) srli x15, x19, 0x39                       rvtest_init+72
+x15 <- 0x0000000000000000
+
+mem[X,0x000000008000004C] -> 0x6A33
+mem[X,0x000000008000004E] -> 0x00FA
+[19] [M]: 0x000000008000004C (0x00FA6A33) or x20, x20, x15                          rvtest_init+76
+x20 <- 0x00000007D5BFDDB7
+
+clint mtime 0x000000000000000A (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000050] -> 0x5A93
+mem[X,0x0000000080000052] -> 0x007A
+[20] [M]: 0x0000000080000050 (0x007A5A93) srli x21, x20, 0x7                        rvtest_init+80
+x21 <- 0x000000000FAB7FBB
+
+mem[X,0x0000000080000054] -> 0x5793
+mem[X,0x0000000080000056] -> 0x039A
+[21] [M]: 0x0000000080000054 (0x039A5793) srli x15, x20, 0x39                       rvtest_init+84
+x15 <- 0x0000000000000000
+
+clint mtime 0x000000000000000B (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000058] -> 0xEAB3
+mem[X,0x000000008000005A] -> 0x00FA
+[22] [M]: 0x0000000080000058 (0x00FAEAB3) or x21, x21, x15                          rvtest_init+88
+x21 <- 0x000000000FAB7FBB
+
+mem[X,0x000000008000005C] -> 0xDB13
+mem[X,0x000000008000005E] -> 0x007A
+[23] [M]: 0x000000008000005C (0x007ADB13) srli x22, x21, 0x7                        rvtest_init+92
+x22 <- 0x00000000001F56FF
+
+clint mtime 0x000000000000000C (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000060] -> 0xD793
+mem[X,0x0000000080000062] -> 0x039A
+[24] [M]: 0x0000000080000060 (0x039AD793) srli x15, x21, 0x39                       rvtest_init+96
+x15 <- 0x0000000000000000
+
+mem[X,0x0000000080000064] -> 0x6B33
+mem[X,0x0000000080000066] -> 0x00FB
+[25] [M]: 0x0000000080000064 (0x00FB6B33) or x22, x22, x15                          rvtest_init+100
+x22 <- 0x00000000001F56FF
+
+clint mtime 0x000000000000000D (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000068] -> 0x5B93
+mem[X,0x000000008000006A] -> 0x007B
+[26] [M]: 0x0000000080000068 (0x007B5B93) srli x23, x22, 0x7                        rvtest_init+104
+x23 <- 0x0000000000003EAD
+
+mem[X,0x000000008000006C] -> 0x5793
+mem[X,0x000000008000006E] -> 0x039B
+[27] [M]: 0x000000008000006C (0x039B5793) srli x15, x22, 0x39                       rvtest_init+108
+x15 <- 0x0000000000000000
+
+clint mtime 0x000000000000000E (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000070] -> 0xEBB3
+mem[X,0x0000000080000072] -> 0x00FB
+[28] [M]: 0x0000000080000070 (0x00FBEBB3) or x23, x23, x15                          rvtest_init+112
+x23 <- 0x0000000000003EAD
+
+mem[X,0x0000000080000074] -> 0xDC13
+mem[X,0x0000000080000076] -> 0x007B
+[29] [M]: 0x0000000080000074 (0x007BDC13) srli x24, x23, 0x7                        rvtest_init+116
+x24 <- 0x000000000000007D
+
+clint mtime 0x000000000000000F (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000078] -> 0xD793
+mem[X,0x000000008000007A] -> 0x039B
+[30] [M]: 0x0000000080000078 (0x039BD793) srli x15, x23, 0x39                       rvtest_init+120
+x15 <- 0x0000000000000000
+
+mem[X,0x000000008000007C] -> 0x6C33
+mem[X,0x000000008000007E] -> 0x00FC
+[31] [M]: 0x000000008000007C (0x00FC6C33) or x24, x24, x15                          rvtest_init+124
+x24 <- 0x000000000000007D
+
+clint mtime 0x0000000000000010 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000080] -> 0x5C93
+mem[X,0x0000000080000082] -> 0x007C
+[32] [M]: 0x0000000080000080 (0x007C5C93) srli x25, x24, 0x7                        rvtest_init+128
+x25 <- 0x0000000000000000
+
+mem[X,0x0000000080000084] -> 0x5793
+mem[X,0x0000000080000086] -> 0x039C
+[33] [M]: 0x0000000080000084 (0x039C5793) srli x15, x24, 0x39                       rvtest_init+132
+x15 <- 0x0000000000000000
+
+clint mtime 0x0000000000000011 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000088] -> 0xECB3
+mem[X,0x000000008000008A] -> 0x00FC
+[34] [M]: 0x0000000080000088 (0x00FCECB3) or x25, x25, x15                          rvtest_init+136
+x25 <- 0x0000000000000000
+
+mem[X,0x000000008000008C] -> 0xDD13
+mem[X,0x000000008000008E] -> 0x007C
+[35] [M]: 0x000000008000008C (0x007CDD13) srli x26, x25, 0x7                        rvtest_init+140
+x26 <- 0x0000000000000000
+
+clint mtime 0x0000000000000012 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000090] -> 0xD793
+mem[X,0x0000000080000092] -> 0x039C
+[36] [M]: 0x0000000080000090 (0x039CD793) srli x15, x25, 0x39                       rvtest_init+144
+x15 <- 0x0000000000000000
+
+mem[X,0x0000000080000094] -> 0x6D33
+mem[X,0x0000000080000096] -> 0x00FD
+[37] [M]: 0x0000000080000094 (0x00FD6D33) or x26, x26, x15                          rvtest_init+148
+x26 <- 0x0000000000000000
+
+clint mtime 0x0000000000000013 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000098] -> 0x5D93
+mem[X,0x000000008000009A] -> 0x007D
+[38] [M]: 0x0000000080000098 (0x007D5D93) srli x27, x26, 0x7                        rvtest_init+152
+x27 <- 0x0000000000000000
+
+mem[X,0x000000008000009C] -> 0x5793
+mem[X,0x000000008000009E] -> 0x039D
+[39] [M]: 0x000000008000009C (0x039D5793) srli x15, x26, 0x39                       rvtest_init+156
+x15 <- 0x0000000000000000
+
+clint mtime 0x0000000000000014 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000A0] -> 0xEDB3
+mem[X,0x00000000800000A2] -> 0x00FD
+[40] [M]: 0x00000000800000A0 (0x00FDEDB3) or x27, x27, x15                          rvtest_init+160
+x27 <- 0x0000000000000000
+
+mem[X,0x00000000800000A4] -> 0xDE13
+mem[X,0x00000000800000A6] -> 0x007D
+[41] [M]: 0x00000000800000A4 (0x007DDE13) srli x28, x27, 0x7                        rvtest_init+164
+x28 <- 0x0000000000000000
+
+clint mtime 0x0000000000000015 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000A8] -> 0xD793
+mem[X,0x00000000800000AA] -> 0x039D
+[42] [M]: 0x00000000800000A8 (0x039DD793) srli x15, x27, 0x39                       rvtest_init+168
+x15 <- 0x0000000000000000
+
+mem[X,0x00000000800000AC] -> 0x6E33
+mem[X,0x00000000800000AE] -> 0x00FE
+[43] [M]: 0x00000000800000AC (0x00FE6E33) or x28, x28, x15                          rvtest_init+172
+x28 <- 0x0000000000000000
+
+clint mtime 0x0000000000000016 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000B0] -> 0x5E93
+mem[X,0x00000000800000B2] -> 0x007E
+[44] [M]: 0x00000000800000B0 (0x007E5E93) srli x29, x28, 0x7                        rvtest_init+176
+x29 <- 0x0000000000000000
+
+mem[X,0x00000000800000B4] -> 0x5793
+mem[X,0x00000000800000B6] -> 0x039E
+[45] [M]: 0x00000000800000B4 (0x039E5793) srli x15, x28, 0x39                       rvtest_init+180
+x15 <- 0x0000000000000000
+
+clint mtime 0x0000000000000017 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000B8] -> 0xEEB3
+mem[X,0x00000000800000BA] -> 0x00FE
+[46] [M]: 0x00000000800000B8 (0x00FEEEB3) or x29, x29, x15                          rvtest_init+184
+x29 <- 0x0000000000000000
+
+mem[X,0x00000000800000BC] -> 0xDF13
+mem[X,0x00000000800000BE] -> 0x007E
+[47] [M]: 0x00000000800000BC (0x007EDF13) srli x30, x29, 0x7                        rvtest_init+188
+x30 <- 0x0000000000000000
+
+clint mtime 0x0000000000000018 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000C0] -> 0xD793
+mem[X,0x00000000800000C2] -> 0x039E
+[48] [M]: 0x00000000800000C0 (0x039ED793) srli x15, x29, 0x39                       rvtest_init+192
+x15 <- 0x0000000000000000
+
+mem[X,0x00000000800000C4] -> 0x6F33
+mem[X,0x00000000800000C6] -> 0x00FF
+[49] [M]: 0x00000000800000C4 (0x00FF6F33) or x30, x30, x15                          rvtest_init+196
+x30 <- 0x0000000000000000
+
+clint mtime 0x0000000000000019 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000C8] -> 0xC0B7
+mem[X,0x00000000800000CA] -> 0xFEED
+[50] [M]: 0x00000000800000C8 (0xFEEDC0B7) lui x1, -0x1124                           rvtest_init+200
+x1 <- 0xFFFFFFFFFEEDC000
+
+mem[X,0x00000000800000CC] -> 0x8093
+mem[X,0x00000000800000CE] -> 0xEAD0
+[51] [M]: 0x00000000800000CC (0xEAD08093) addi x1, x1, -0x153                       rvtest_init+204
+x1 <- 0xFFFFFFFFFEEDBEAD
+
+clint mtime 0x000000000000001A (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000D0] -> 0x9093
+mem[X,0x00000000800000D2] -> 0x00B0
+[52] [M]: 0x00000000800000D0 (0x00B09093) slli x1, x1, 0xb                          rvtest_init+208
+x1 <- 0xFFFFFFF76DF56800
+
+mem[X,0x00000000800000D4] -> 0x8093
+mem[X,0x00000000800000D6] -> 0x7F70
+[53] [M]: 0x00000000800000D4 (0x7F708093) addi x1, x1, 0x7f7                        rvtest_init+212
+x1 <- 0xFFFFFFF76DF56FF7
+
+clint mtime 0x000000000000001B (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000D8] -> 0x9093
+mem[X,0x00000000800000DA] -> 0x00B0
+[54] [M]: 0x00000000800000D8 (0x00B09093) slli x1, x1, 0xb                          rvtest_init+216
+x1 <- 0xFFFFBB6FAB7FB800
+
+mem[X,0x00000000800000DC] -> 0x8093
+mem[X,0x00000000800000DE] -> 0x36F0
+[55] [M]: 0x00000000800000DC (0x36F08093) addi x1, x1, 0x36f                        rvtest_init+220
+x1 <- 0xFFFFBB6FAB7FBB6F
+
+clint mtime 0x000000000000001C (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000E0] -> 0x9093
+mem[X,0x00000000800000E2] -> 0x00A0
+[56] [M]: 0x00000000800000E0 (0x00A09093) slli x1, x1, 0xa                          rvtest_init+224
+x1 <- 0xFEEDBEADFEEDBC00
+
+mem[X,0x00000000800000E4] -> 0x8093
+mem[X,0x00000000800000E6] -> 0x2AD0
+[57] [M]: 0x00000000800000E4 (0x2AD08093) addi x1, x1, 0x2ad                        rvtest_init+228
+x1 <- 0xFEEDBEADFEEDBEAD
+
+clint mtime 0x000000000000001D (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000E8] -> 0xD113
+mem[X,0x00000000800000EA] -> 0x0070
+[58] [M]: 0x00000000800000E8 (0x0070D113) srli x2, x1, 0x7                          rvtest_init+232
+x2 <- 0x01FDDB7D5BFDDB7D
+
+mem[X,0x00000000800000EC] -> 0xD793
+mem[X,0x00000000800000EE] -> 0x0390
+[59] [M]: 0x00000000800000EC (0x0390D793) srli x15, x1, 0x39                        rvtest_init+236
+x15 <- 0x000000000000007F
+
+clint mtime 0x000000000000001E (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000F0] -> 0x6133
+mem[X,0x00000000800000F2] -> 0x00F1
+[60] [M]: 0x00000000800000F0 (0x00F16133) or x2, x2, x15                            rvtest_init+240
+x2 <- 0x01FDDB7D5BFDDB7F
+
+mem[X,0x00000000800000F4] -> 0x5193
+mem[X,0x00000000800000F6] -> 0x0071
+[61] [M]: 0x00000000800000F4 (0x00715193) srli x3, x2, 0x7                          rvtest_init+244
+x3 <- 0x0003FBB6FAB7FBB6
+
+clint mtime 0x000000000000001F (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800000F8] -> 0x5793
+mem[X,0x00000000800000FA] -> 0x0391
+[62] [M]: 0x00000000800000F8 (0x03915793) srli x15, x2, 0x39                        rvtest_init+248
+x15 <- 0x0000000000000000
+
+mem[X,0x00000000800000FC] -> 0xE1B3
+mem[X,0x00000000800000FE] -> 0x00F1
+[63] [M]: 0x00000000800000FC (0x00F1E1B3) or x3, x3, x15                            rvtest_init+252
+x3 <- 0x0003FBB6FAB7FBB6
+
+clint mtime 0x0000000000000020 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000100] -> 0xD213
+mem[X,0x0000000080000102] -> 0x0071
+[64] [M]: 0x0000000080000100 (0x0071D213) srli x4, x3, 0x7                          rvtest_init+256
+x4 <- 0x000007F76DF56FF7
+
+mem[X,0x0000000080000104] -> 0xD793
+mem[X,0x0000000080000106] -> 0x0391
+[65] [M]: 0x0000000080000104 (0x0391D793) srli x15, x3, 0x39                        rvtest_init+260
+x15 <- 0x0000000000000000
+
+clint mtime 0x0000000000000021 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000108] -> 0x6233
+mem[X,0x000000008000010A] -> 0x00F2
+[66] [M]: 0x0000000080000108 (0x00F26233) or x4, x4, x15                            rvtest_init+264
+x4 <- 0x000007F76DF56FF7
+
+mem[X,0x000000008000010C] -> 0x5293
+mem[X,0x000000008000010E] -> 0x0072
+[67] [M]: 0x000000008000010C (0x00725293) srli x5, x4, 0x7                          rvtest_init+268
+x5 <- 0x0000000FEEDBEADF
+
+clint mtime 0x0000000000000022 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000110] -> 0x5793
+mem[X,0x0000000080000112] -> 0x0392
+[68] [M]: 0x0000000080000110 (0x03925793) srli x15, x4, 0x39                        rvtest_init+272
+x15 <- 0x0000000000000000
+
+mem[X,0x0000000080000114] -> 0xE2B3
+mem[X,0x0000000080000116] -> 0x00F2
+[69] [M]: 0x0000000080000114 (0x00F2E2B3) or x5, x5, x15                            rvtest_init+276
+x5 <- 0x0000000FEEDBEADF
+
+clint mtime 0x0000000000000023 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000118] -> 0xD313
+mem[X,0x000000008000011A] -> 0x0072
+[70] [M]: 0x0000000080000118 (0x0072D313) srli x6, x5, 0x7                          rvtest_init+280
+x6 <- 0x000000001FDDB7D5
+
+mem[X,0x000000008000011C] -> 0xD793
+mem[X,0x000000008000011E] -> 0x0392
+[71] [M]: 0x000000008000011C (0x0392D793) srli x15, x5, 0x39                        rvtest_init+284
+x15 <- 0x0000000000000000
+
+clint mtime 0x0000000000000024 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000120] -> 0x6333
+mem[X,0x0000000080000122] -> 0x00F3
+[72] [M]: 0x0000000080000120 (0x00F36333) or x6, x6, x15                            rvtest_init+288
+x6 <- 0x000000001FDDB7D5
+
+mem[X,0x0000000080000124] -> 0x5393
+mem[X,0x0000000080000126] -> 0x0073
+[73] [M]: 0x0000000080000124 (0x00735393) srli x7, x6, 0x7                          rvtest_init+292
+x7 <- 0x00000000003FBB6F
+
+clint mtime 0x0000000000000025 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000128] -> 0x5793
+mem[X,0x000000008000012A] -> 0x0393
+[74] [M]: 0x0000000080000128 (0x03935793) srli x15, x6, 0x39                        rvtest_init+296
+x15 <- 0x0000000000000000
+
+mem[X,0x000000008000012C] -> 0xE3B3
+mem[X,0x000000008000012E] -> 0x00F3
+[75] [M]: 0x000000008000012C (0x00F3E3B3) or x7, x7, x15                            rvtest_init+300
+x7 <- 0x00000000003FBB6F
+
+clint mtime 0x0000000000000026 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000130] -> 0xD413
+mem[X,0x0000000080000132] -> 0x0073
+[76] [M]: 0x0000000080000130 (0x0073D413) srli x8, x7, 0x7                          rvtest_init+304
+x8 <- 0x0000000000007F76
+
+mem[X,0x0000000080000134] -> 0xD793
+mem[X,0x0000000080000136] -> 0x0393
+[77] [M]: 0x0000000080000134 (0x0393D793) srli x15, x7, 0x39                        rvtest_init+308
+x15 <- 0x0000000000000000
+
+clint mtime 0x0000000000000027 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000138] -> 0x6433
+mem[X,0x000000008000013A] -> 0x00F4
+[78] [M]: 0x0000000080000138 (0x00F46433) or x8, x8, x15                            rvtest_init+312
+x8 <- 0x0000000000007F76
+
+mem[X,0x000000008000013C] -> 0x5493
+mem[X,0x000000008000013E] -> 0x0074
+[79] [M]: 0x000000008000013C (0x00745493) srli x9, x8, 0x7                          rvtest_init+316
+x9 <- 0x00000000000000FE
+
+clint mtime 0x0000000000000028 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000140] -> 0x5793
+mem[X,0x0000000080000142] -> 0x0394
+[80] [M]: 0x0000000080000140 (0x03945793) srli x15, x8, 0x39                        rvtest_init+320
+x15 <- 0x0000000000000000
+
+mem[X,0x0000000080000144] -> 0xE4B3
+mem[X,0x0000000080000146] -> 0x00F4
+[81] [M]: 0x0000000080000144 (0x00F4E4B3) or x9, x9, x15                            rvtest_init+324
+x9 <- 0x00000000000000FE
+
+clint mtime 0x0000000000000029 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000148] -> 0xD513
+mem[X,0x000000008000014A] -> 0x0074
+[82] [M]: 0x0000000080000148 (0x0074D513) srli x10, x9, 0x7                         rvtest_init+328
+x10 <- 0x0000000000000001
+
+mem[X,0x000000008000014C] -> 0xD793
+mem[X,0x000000008000014E] -> 0x0394
+[83] [M]: 0x000000008000014C (0x0394D793) srli x15, x9, 0x39                        rvtest_init+332
+x15 <- 0x0000000000000000
+
+clint mtime 0x000000000000002A (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000150] -> 0x6533
+mem[X,0x0000000080000152] -> 0x00F5
+[84] [M]: 0x0000000080000150 (0x00F56533) or x10, x10, x15                          rvtest_init+336
+x10 <- 0x0000000000000001
+
+mem[X,0x0000000080000154] -> 0x5593
+mem[X,0x0000000080000156] -> 0x0075
+[85] [M]: 0x0000000080000154 (0x00755593) srli x11, x10, 0x7                        rvtest_init+340
+x11 <- 0x0000000000000000
+
+clint mtime 0x000000000000002B (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000158] -> 0x5793
+mem[X,0x000000008000015A] -> 0x0395
+[86] [M]: 0x0000000080000158 (0x03955793) srli x15, x10, 0x39                       rvtest_init+344
+x15 <- 0x0000000000000000
+
+mem[X,0x000000008000015C] -> 0xE5B3
+mem[X,0x000000008000015E] -> 0x00F5
+[87] [M]: 0x000000008000015C (0x00F5E5B3) or x11, x11, x15                          rvtest_init+348
+x11 <- 0x0000000000000000
+
+clint mtime 0x000000000000002C (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000160] -> 0xD613
+mem[X,0x0000000080000162] -> 0x0075
+[88] [M]: 0x0000000080000160 (0x0075D613) srli x12, x11, 0x7                        rvtest_init+352
+x12 <- 0x0000000000000000
+
+mem[X,0x0000000080000164] -> 0xD793
+mem[X,0x0000000080000166] -> 0x0395
+[89] [M]: 0x0000000080000164 (0x0395D793) srli x15, x11, 0x39                       rvtest_init+356
+x15 <- 0x0000000000000000
+
+clint mtime 0x000000000000002D (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000168] -> 0x6633
+mem[X,0x000000008000016A] -> 0x00F6
+[90] [M]: 0x0000000080000168 (0x00F66633) or x12, x12, x15                          rvtest_init+360
+x12 <- 0x0000000000000000
+
+mem[X,0x000000008000016C] -> 0x5693
+mem[X,0x000000008000016E] -> 0x0076
+[91] [M]: 0x000000008000016C (0x00765693) srli x13, x12, 0x7                        rvtest_init+364
+x13 <- 0x0000000000000000
+
+clint mtime 0x000000000000002E (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000170] -> 0x5793
+mem[X,0x0000000080000172] -> 0x0396
+[92] [M]: 0x0000000080000170 (0x03965793) srli x15, x12, 0x39                       rvtest_init+368
+x15 <- 0x0000000000000000
+
+mem[X,0x0000000080000174] -> 0xE6B3
+mem[X,0x0000000080000176] -> 0x00F6
+[93] [M]: 0x0000000080000174 (0x00F6E6B3) or x13, x13, x15                          rvtest_init+372
+x13 <- 0x0000000000000000
+
+clint mtime 0x000000000000002F (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000178] -> 0x0013
+mem[X,0x000000008000017A] -> 0x0000
+[94] [M]: 0x0000000080000178 (0x00000013) addi x0, x0, 0x0                          rvtest_code_begin+0
+
+mem[X,0x000000008000017C] -> 0x0013
+mem[X,0x000000008000017E] -> 0x0000
+[95] [M]: 0x000000008000017C (0x00000013) addi x0, x0, 0x0                          rvtest_code_begin+4
+
+clint mtime 0x0000000000000030 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000180] -> 0x2497
+mem[X,0x0000000080000182] -> 0x0000
+[96] [M]: 0x0000000080000180 (0x00002497) auipc x9, 0x2                             rvtest_code_begin+8
+x9 <- 0x0000000080002180
+
+mem[X,0x0000000080000184] -> 0x8493
+mem[X,0x0000000080000186] -> 0xE804
+[97] [M]: 0x0000000080000184 (0xE8048493) addi x9, x9, -0x180                       rvtest_code_begin+12
+x9 <- 0x0000000080002000
+
+clint mtime 0x0000000000000031 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000188] -> 0x0013
+mem[X,0x000000008000018A] -> 0x0000
+[98] [M]: 0x0000000080000188 (0x00000013) addi x0, x0, 0x0                          rvtest_code_begin+16
+
+mem[X,0x000000008000018C] -> 0x0013
+mem[X,0x000000008000018E] -> 0x0000
+[99] [M]: 0x000000008000018C (0x00000013) addi x0, x0, 0x0                          rvtest_code_begin+20
+
+clint mtime 0x0000000000000032 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000190] -> 0x0013
+mem[X,0x0000000080000192] -> 0x0000
+[100] [M]: 0x0000000080000190 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+24
+
+mem[X,0x0000000080000194] -> 0x0013
+mem[X,0x0000000080000196] -> 0x0000
+[101] [M]: 0x0000000080000194 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+28
+
+clint mtime 0x0000000000000033 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000198] -> 0x0013
+mem[X,0x000000008000019A] -> 0x0000
+[102] [M]: 0x0000000080000198 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+32
+
+mem[X,0x000000008000019C] -> 0x0013
+mem[X,0x000000008000019E] -> 0x0000
+[103] [M]: 0x000000008000019C (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+36
+
+clint mtime 0x0000000000000034 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001A0] -> 0x0413
+mem[X,0x00000000800001A2] -> 0xFFF0
+[104] [M]: 0x00000000800001A0 (0xFFF00413) addi x8, x0, -0x1                        rvtest_code_begin+40
+x8 <- 0xFFFFFFFFFFFFFFFF
+
+mem[X,0x00000000800001A4] -> 0x5413
+mem[X,0x00000000800001A6] -> 0x0204
+[105] [M]: 0x00000000800001A4 (0x02045413) srli x8, x8, 0x20                        rvtest_code_begin+44
+x8 <- 0x00000000FFFFFFFF
+
+clint mtime 0x0000000000000035 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001A8] -> 0x53B7
+mem[X,0x00000000800001AA] -> 0x5555
+[106] [M]: 0x00000000800001A8 (0x555553B7) lui x7, 0x55555                          rvtest_code_begin+48
+x7 <- 0x0000000055555000
+
+mem[X,0x00000000800001AC] -> 0x8393
+mem[X,0x00000000800001AE] -> 0x5553
+[107] [M]: 0x00000000800001AC (0x55538393) addi x7, x7, 0x555                       rvtest_code_begin+52
+x7 <- 0x0000000055555555
+
+clint mtime 0x0000000000000036 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001B0] -> 0x9393
+mem[X,0x00000000800001B2] -> 0x0013
+[108] [M]: 0x00000000800001B0 (0x00139393) slli x7, x7, 0x1                         rvtest_code_begin+56
+x7 <- 0x00000000AAAAAAAA
+
+mem[X,0x00000000800001B4] -> 0xA023
+mem[X,0x00000000800001B6] -> 0x0084
+[109] [M]: 0x00000000800001B4 (0x0084A023) sw x8, 0x0(x9)                           rvtest_code_begin+60
+mem[W,0x0000000080002000] <- 0xFFFFFFFF
+
+clint mtime 0x0000000000000037 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001B8] -> 0xA223
+mem[X,0x00000000800001BA] -> 0x0074
+[110] [M]: 0x00000000800001B8 (0x0074A223) sw x7, 0x4(x9)                           rvtest_code_begin+64
+mem[W,0x0000000080002004] <- 0xAAAAAAAA
+
+mem[X,0x00000000800001BC] -> 0x000F
+mem[X,0x00000000800001BE] -> 0x0FF0
+[111] [M]: 0x00000000800001BC (0x0FF0000F) fence iorw, iorw                         rvtest_code_begin+68
+
+clint mtime 0x0000000000000038 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001C0] -> 0xA183
+mem[X,0x00000000800001C2] -> 0x0004
+[112] [M]: 0x00000000800001C0 (0x0004A183) lw x3, 0x0(x9)                           rvtest_code_begin+72
+mem[R,0x0000000080002000] -> 0xFFFFFFFF
+x3 <- 0xFFFFFFFFFFFFFFFF
+
+mem[X,0x00000000800001C4] -> 0xA203
+mem[X,0x00000000800001C6] -> 0x0044
+[113] [M]: 0x00000000800001C4 (0x0044A203) lw x4, 0x4(x9)                           rvtest_code_begin+76
+mem[R,0x0000000080002004] -> 0xAAAAAAAA
+x4 <- 0xFFFFFFFFAAAAAAAA
+
+clint mtime 0x0000000000000039 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001C8] -> 0x0013
+mem[X,0x00000000800001CA] -> 0x0000
+[114] [M]: 0x00000000800001C8 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+80
+
+mem[X,0x00000000800001CC] -> 0x0013
+mem[X,0x00000000800001CE] -> 0x0000
+[115] [M]: 0x00000000800001CC (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+84
+
+clint mtime 0x000000000000003A (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001D0] -> 0x0013
+mem[X,0x00000000800001D2] -> 0x0000
+[116] [M]: 0x00000000800001D0 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+88
+
+mem[X,0x00000000800001D4] -> 0x0013
+mem[X,0x00000000800001D6] -> 0x0000
+[117] [M]: 0x00000000800001D4 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+92
+
+clint mtime 0x000000000000003B (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001D8] -> 0x0013
+mem[X,0x00000000800001DA] -> 0x0000
+[118] [M]: 0x00000000800001D8 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+96
+
+mem[X,0x00000000800001DC] -> 0x0013
+mem[X,0x00000000800001DE] -> 0x0000
+[119] [M]: 0x00000000800001DC (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+100
+
+clint mtime 0x000000000000003C (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001E0] -> 0x3497
+mem[X,0x00000000800001E2] -> 0x0000
+[120] [M]: 0x00000000800001E0 (0x00003497) auipc x9, 0x3                            rvtest_code_begin+104
+x9 <- 0x00000000800031E0
+
+mem[X,0x00000000800001E4] -> 0x8493
+mem[X,0x00000000800001E6] -> 0xF384
+[121] [M]: 0x00000000800001E4 (0xF3848493) addi x9, x9, -0xc8                       rvtest_code_begin+108
+x9 <- 0x0000000080003118
+
+clint mtime 0x000000000000003D (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001E8] -> 0x0001
+[122] [M]: 0x00000000800001E8 (0x0001) c.nop                                        rvtest_code_begin+112
+
+mem[X,0x00000000800001EA] -> 0x0013
+mem[X,0x00000000800001EC] -> 0x0000
+[123] [M]: 0x00000000800001EA (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+114
+
+clint mtime 0x000000000000003E (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001EE] -> 0x0013
+mem[X,0x00000000800001F0] -> 0x0000
+[124] [M]: 0x00000000800001EE (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+118
+
+mem[X,0x00000000800001F2] -> 0x0013
+mem[X,0x00000000800001F4] -> 0x0000
+[125] [M]: 0x00000000800001F2 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+122
+
+clint mtime 0x000000000000003F (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001F6] -> 0x0013
+mem[X,0x00000000800001F8] -> 0x0000
+[126] [M]: 0x00000000800001F6 (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+126
+
+mem[X,0x00000000800001FA] -> 0x0013
+mem[X,0x00000000800001FC] -> 0x0000
+[127] [M]: 0x00000000800001FA (0x00000013) addi x0, x0, 0x0                         rvtest_code_begin+130
+
+clint mtime 0x0000000000000040 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x00000000800001FE] -> 0x0001
+[128] [M]: 0x00000000800001FE (0x0001) c.nop                                        rvtest_code_begin+134
+
+mem[X,0x0000000080000200] -> 0xA023
+mem[X,0x0000000080000202] -> 0x0044
+[129] [M]: 0x0000000080000200 (0x0044A023) sw x4, 0x0(x9)                           rvtest_code_begin+136
+mem[W,0x0000000080003118] <- 0xAAAAAAAA
+
+clint mtime 0x0000000000000041 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000204] -> 0xA223
+mem[X,0x0000000080000206] -> 0x0034
+[130] [M]: 0x0000000080000204 (0x0034A223) sw x3, 0x4(x9)                           rvtest_code_begin+140
+mem[W,0x000000008000311C] <- 0xFFFFFFFF
+
+mem[X,0x0000000080000208] -> 0x006F
+mem[X,0x000000008000020A] -> 0x0380
+[131] [M]: 0x0000000080000208 (0x0380006F) jal x0, 0x38                             rvtest_code_end+0
+
+clint mtime 0x0000000000000042 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000240] -> 0x0093
+mem[X,0x0000000080000242] -> 0x0010
+[132] [M]: 0x0000000080000240 (0x00100093) addi x1, x0, 0x1                         exit_cleanup+0
+x1 <- 0x0000000000000001
+
+mem[X,0x0000000080000244] -> 0x1297
+mem[X,0x0000000080000246] -> 0x0000
+[133] [M]: 0x0000000080000244 (0x00001297) auipc x5, 0x1                            write_tohost+0
+x5 <- 0x0000000080001244
+
+clint mtime 0x0000000000000043 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000248] -> 0xAE23
+mem[X,0x000000008000024A] -> 0xDA12
+[134] [M]: 0x0000000080000248 (0xDA12AE23) sw x1, -0x244(x5)                        write_tohost+4
+htif[0x0000000080001000] <- 0x00000001
+mem[W,0x0000000080001000] <- 0x00000001
+
+mem[X,0x000000008000024C] -> 0xF06F
+mem[X,0x000000008000024E] -> 0xFF9F
+[135] [M]: 0x000000008000024C (0xFF9FF06F) jal x0, -0x8                             write_tohost+8
+
+clint mtime 0x0000000000000044 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000244] -> 0x1297
+mem[X,0x0000000080000246] -> 0x0000
+[136] [M]: 0x0000000080000244 (0x00001297) auipc x5, 0x1                            write_tohost+0
+x5 <- 0x0000000080001244
+
+mem[X,0x0000000080000248] -> 0xAE23
+mem[X,0x000000008000024A] -> 0xDA12
+[137] [M]: 0x0000000080000248 (0xDA12AE23) sw x1, -0x244(x5)                        write_tohost+4
+htif[0x0000000080001000] <- 0x00000001
+mem[W,0x0000000080001000] <- 0x00000001
+
+clint mtime 0x0000000000000045 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x000000008000024C] -> 0xF06F
+mem[X,0x000000008000024E] -> 0xFF9F
+[138] [M]: 0x000000008000024C (0xFF9FF06F) jal x0, -0x8                             write_tohost+8
+
+mem[X,0x0000000080000244] -> 0x1297
+mem[X,0x0000000080000246] -> 0x0000
+[139] [M]: 0x0000000080000244 (0x00001297) auipc x5, 0x1                            write_tohost+0
+x5 <- 0x0000000080001244
+
+clint mtime 0x0000000000000046 (mip.MTI <- 0b1, mip.STI <- 0b0)
+mem[X,0x0000000080000248] -> 0xAE23
+mem[X,0x000000008000024A] -> 0xDA12
+[140] [M]: 0x0000000080000248 (0xDA12AE23) sw x1, -0x244(x5)                        write_tohost+4
+htif[0x0000000080001000] <- 0x00000001
+htif-syscall-proxy cmd: 0x000000000001
+mem[W,0x0000000080001000] <- 0x00000001
+
+SUCCESS
