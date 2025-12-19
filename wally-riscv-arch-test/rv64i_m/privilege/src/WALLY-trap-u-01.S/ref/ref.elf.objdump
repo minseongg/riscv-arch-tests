@@ -985,62 +985,46 @@ Disassembly of section .text.init:
     80000cb8:	fc0ff0ef          	jal	80000478 <cause_store_addr_misaligned>
     80000cbc:	fccff0ef          	jal	80000488 <cause_store_acc>
     80000cc0:	fd0ff0ef          	jal	80000490 <cause_ecall>
-    80000cc4:	83dff0ef          	jal	80000500 <cause_m_soft_interrupt>
-    80000cc8:	fd0ff0ef          	jal	80000498 <cause_m_time_interrupt>
-    80000ccc:	04000693          	li	a3,64
-    80000cd0:	8c1ff0ef          	jal	80000590 <cause_s_ext_interrupt_GPIO>
-    80000cd4:	04000693          	li	a3,64
-    80000cd8:	851ff0ef          	jal	80000528 <cause_m_ext_interrupt>
-    80000cdc:	00200513          	li	a0,2
-    80000ce0:	00000593          	li	a1,0
-    80000ce4:	00000613          	li	a2,0
-    80000ce8:	00000073          	ecall
-    80000cec:	00001f37          	lui	t5,0x1
-    80000cf0:	badf0f1b          	addiw	t5,t5,-1107 # bad <pos+0xb6d>
-    80000cf4:	fff00e93          	li	t4,-1
-    80000cf8:	302e9073          	csrw	medeleg,t4
-    80000cfc:	30202f73          	csrr	t5,medeleg
-    80000d00:	01e33023          	sd	t5,0(t1)
-    80000d04:	00830313          	addi	t1,t1,8
-    80000d08:	00880813          	addi	a6,a6,8
-    80000d0c:	00001f37          	lui	t5,0x1
-    80000d10:	badf0f1b          	addiw	t5,t5,-1107 # bad <pos+0xb6d>
-    80000d14:	fff00e93          	li	t4,-1
-    80000d18:	303e9073          	csrw	mideleg,t4
-    80000d1c:	30302f73          	csrr	t5,mideleg
-    80000d20:	01e33023          	sd	t5,0(t1)
-    80000d24:	00830313          	addi	t1,t1,8
-    80000d28:	00880813          	addi	a6,a6,8
-    80000d2c:	00400513          	li	a0,4
-    80000d30:	00000593          	li	a1,0
-    80000d34:	00000613          	li	a2,0
-    80000d38:	00000073          	ecall
-    80000d3c:	efcff0ef          	jal	80000438 <cause_instr_access>
-    80000d40:	f10ff0ef          	jal	80000450 <cause_illegal_instr>
-    80000d44:	f14ff0ef          	jal	80000458 <cause_breakpnt>
-    80000d48:	f18ff0ef          	jal	80000460 <cause_load_addr_misaligned>
-    80000d4c:	f24ff0ef          	jal	80000470 <cause_load_acc>
-    80000d50:	f28ff0ef          	jal	80000478 <cause_store_addr_misaligned>
-    80000d54:	f34ff0ef          	jal	80000488 <cause_store_acc>
-    80000d58:	f38ff0ef          	jal	80000490 <cause_ecall>
-    80000d5c:	04000693          	li	a3,64
-    80000d60:	831ff0ef          	jal	80000590 <cause_s_ext_interrupt_GPIO>
-    80000d64:	29c0106f          	j	80002000 <terminate_test>
-    80000d68:	0001                	.insn	2, 0x0001
-    80000d6a:	00000013          	nop
-    80000d6e:	00000013          	nop
-    80000d72:	00000013          	nop
-    80000d76:	00000013          	nop
-    80000d7a:	00000013          	nop
-    80000d7e:	00000013          	nop
-    80000d82:	00000013          	nop
-    80000d86:	00000013          	nop
-    80000d8a:	00000013          	nop
-    80000d8e:	00000013          	nop
-    80000d92:	00000013          	nop
-    80000d96:	00000013          	nop
-    80000d9a:	00000013          	nop
-    80000d9e:	00000013          	nop
+    80000cc4:	fd4ff0ef          	jal	80000498 <cause_m_time_interrupt>
+    80000cc8:	00200513          	li	a0,2
+    80000ccc:	00000593          	li	a1,0
+    80000cd0:	00000613          	li	a2,0
+    80000cd4:	00000073          	ecall
+    80000cd8:	00001f37          	lui	t5,0x1
+    80000cdc:	badf0f1b          	addiw	t5,t5,-1107 # bad <pos+0xb6d>
+    80000ce0:	fff00e93          	li	t4,-1
+    80000ce4:	302e9073          	csrw	medeleg,t4
+    80000ce8:	30202f73          	csrr	t5,medeleg
+    80000cec:	01e33023          	sd	t5,0(t1)
+    80000cf0:	00830313          	addi	t1,t1,8
+    80000cf4:	00880813          	addi	a6,a6,8
+    80000cf8:	00001f37          	lui	t5,0x1
+    80000cfc:	badf0f1b          	addiw	t5,t5,-1107 # bad <pos+0xb6d>
+    80000d00:	fff00e93          	li	t4,-1
+    80000d04:	303e9073          	csrw	mideleg,t4
+    80000d08:	30302f73          	csrr	t5,mideleg
+    80000d0c:	01e33023          	sd	t5,0(t1)
+    80000d10:	00830313          	addi	t1,t1,8
+    80000d14:	00880813          	addi	a6,a6,8
+    80000d18:	00400513          	li	a0,4
+    80000d1c:	00000593          	li	a1,0
+    80000d20:	00000613          	li	a2,0
+    80000d24:	00000073          	ecall
+    80000d28:	f10ff0ef          	jal	80000438 <cause_instr_access>
+    80000d2c:	f24ff0ef          	jal	80000450 <cause_illegal_instr>
+    80000d30:	f28ff0ef          	jal	80000458 <cause_breakpnt>
+    80000d34:	f2cff0ef          	jal	80000460 <cause_load_addr_misaligned>
+    80000d38:	f38ff0ef          	jal	80000470 <cause_load_acc>
+    80000d3c:	f3cff0ef          	jal	80000478 <cause_store_addr_misaligned>
+    80000d40:	f48ff0ef          	jal	80000488 <cause_store_acc>
+    80000d44:	f4cff0ef          	jal	80000490 <cause_ecall>
+    80000d48:	2b80106f          	j	80002000 <terminate_test>
+    80000d4c:	0001                	.insn	2, 0x0001
+    80000d4e:	00000013          	nop
+    80000d52:	00000013          	nop
+    80000d56:	00000013          	nop
+    80000d5a:	00000013          	nop
+    80000d5e:	00000013          	nop
 
 Disassembly of section .tohost:
 
